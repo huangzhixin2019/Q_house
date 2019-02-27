@@ -1,0 +1,1458 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 12px/1.5 Arial, Tahoma, "Microsoft YaHei", "\5fae\8f6f\96c5\9ed1", sans-serif;
+  color: #333;
+}
+body,html{
+  min-width:1200px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+input,
+button,
+b {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.clear:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.w-1190 {
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+}
+.icon {
+  display: inline-block;
+  background: url(../img/icons.png) no-repeat;
+}
+.f2 {
+  width: 16px;
+  height: 8px;
+  background-position: -528px -181px;
+  position: absolute;
+  top: -8px;
+  left: 53px;
+}
+.btn {
+  display: inline-block;
+  background: #FF9911;
+  color: #fff;
+  text-align: center;
+  border: none;
+  font-family: 'Microsoft YaHei';
+  outline: none;
+  position: relative;
+  left: -3px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+a {
+  color: #2E2E2E;
+  text-decoration: none;
+  transition: all 200ms linear;
+}
+a:hover {
+  color: #FF9911;
+  text-decoration: underline;
+}
+.orange {
+  color: #FF9911 !important;
+  text-decoration: none !important;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background: #434343;
+}
+div.header-top {
+  line-height: 50px;
+  height: 50px;
+  top: -100px;
+  width: 100%;
+  z-index: 9999;
+  transition: all 300ms linear;
+}
+div.header-top-main.w-1190 {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-content: center;
+}
+div.header-top-main.w-1190 div.header-top-main-left {
+  position: relative;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo {
+  float: left;
+  position: relative;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo > a {
+  width: 185px;
+  height: 28px;
+  background-position: -10px -542px;
+  vertical-align: middle;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo > span {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: #FF9911;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 5px;
+  color: #fff;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo div.location {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  left: 20px;
+  width: 73px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo div.location b {
+  height: 60px;
+  border-left: 1px solid #999;
+  position: relative;
+  left: -10px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo div.location a {
+  color: #fff;
+  text-decoration: none;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo div.location span {
+  color: #999;
+  margin-left: 3px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main {
+  width: 680px;
+  height: 374px;
+  padding: 22px 30px;
+  position: absolute;
+  top: 100px;
+  left: 208px;
+  background: #fff;
+  z-index: 888;
+  opacity: 0;
+  transition: all 300ms linear;
+  display: none;
+  box-shadow: 0 0 5px #999;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main #location-main-closed {
+  cursor: pointer;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main .none1 {
+  display: none;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main ul {
+  width: 100%;
+  margin-top: 12px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main ul li {
+  width: 50%;
+  float: left;
+  line-height: 30px;
+  font-size: 14px;
+  margin-top: 3px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main ul li i {
+  width: 23px;
+  height: 23px;
+  background: #eee;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 23px;
+  text-align: center;
+  font-style: normal;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main ul li a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 200ms linear;
+  color: #666;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main ul li a:hover {
+  color: #FF9911;
+  text-decoration: underline;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main b {
+  position: absolute;
+  top: -8px;
+  left: 38px;
+  width: 16px;
+  height: 8px;
+  background-position: -528px -181px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main span {
+  position: absolute;
+  top: -15px;
+  left: 660px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #DADADA;
+  background-position: -66px -100px;
+  transition: all 200ms linear;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main span:hover {
+  background-color: #FF9911;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo div.block1 {
+  display: block !important;
+}
+div.header-top-main.w-1190 div.header-top-main-right {
+  display: flex;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.nav {
+  font-size: 14px;
+  display: flex;
+  line-height: 50px;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.nav li {
+  padding: 0 12px;
+  text-align: center;
+  position: relative;
+  height: 80px;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.nav li a {
+  color: #999;
+  text-decoration: none;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.nav li a.white {
+  color: #fff;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.nav li a:hover {
+  text-decoration: underline;
+}
+div.header-top-main.w-1190 div.header-top-main-right .nav-down {
+  width: 121px;
+  padding: 7px 0;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -61px;
+  background: #fff;
+  box-shadow: 0 0 10px #999;
+  opacity: 0;
+  transition: all 200ms linear;
+  z-index: 100;
+  display: none;
+}
+div.header-top-main.w-1190 div.header-top-main-right .nav-down p {
+  text-align: center;
+  line-height: normal;
+}
+div.header-top-main.w-1190 div.header-top-main-right .nav-down p a {
+  color: #666 !important;
+  display: block;
+  font-size: 14px;
+  font-weight: normal !important;
+  line-height: 30px;
+  transition: all 200ms linear;
+}
+div.header-top-main.w-1190 div.header-top-main-right .nav-down p a.qrcode {
+  background-position: -464px -198px;
+  height: 105px;
+  width: 120px;
+}
+div.header-top-main.w-1190 div.header-top-main-right .nav-down p a:hover {
+  color: #FF9911 !important;
+  text-decoration: underline;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.register {
+  margin-left: 20px;
+  display: flex;
+  color: #fff;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.register li {
+  padding-bottom: 30px;
+  text-align: center;
+  position: relative;
+  height: 80px;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.register li a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 2px;
+  position: relative;
+  line-height: 30px;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.register li a span {
+  vertical-align: middle;
+  margin-left: 3px;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.register li > i {
+  width: 15px;
+  height: 15px;
+  background-position: -535px -106px;
+  vertical-align: middle;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.register li a:hover {
+  text-decoration: underline;
+}
+section div.w-1190 div.crumbs-links {
+  color: #9B9996;
+  margin: 20px 0 5px;
+}
+section div.w-1190 div.crumbs-links a {
+  color: #9B9996;
+}
+section div.w-1190 div.crumbs-links a:hover {
+  color: #ff9911;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop {
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop > b {
+  background: url(../img/second_house/icons-listings.gif) -292px -32px;
+  width: 7px;
+  height: 4px;
+  vertical-align: middle;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop div.drop-down {
+  width: 480px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #fff;
+  z-index: 888;
+  box-shadow: 0 0 5px #999;
+  display: none;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop div.drop-down p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop div.drop-down ul {
+  margin: 8px 14px 8px 14px;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop div.drop-down ul li {
+  width: 100%;
+  float: left;
+  line-height: 30px;
+  font-size: 14px;
+  margin-top: 3px;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop div.drop-down ul li i {
+  width: 23px;
+  height: 23px;
+  background: #eee;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 23px;
+  text-align: center;
+  font-style: normal;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop div.drop-down ul li a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 200ms linear;
+  color: #666;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop div.drop-down ul li a:hover {
+  color: #FF9911;
+  text-decoration: underline;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop div.drop-down b {
+  position: absolute;
+  top: -8px;
+  left: 36px;
+  width: 16px;
+  height: 8px;
+  background-position: -528px -181px;
+  display: block;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop:hover > a {
+  color: #ff9911;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop:hover > b {
+  background-position: -300px -32px;
+}
+section div.w-1190 div.crumbs-links div.crubms-drop:hover div.drop-down {
+  display: block;
+}
+section div.w-1190 div.crumbs-links i {
+  background-position: -598px -69px;
+  width: 6px;
+  height: 10px;
+  margin: 0 5px;
+}
+section div.w-1190 > h1 {
+  font-size: 28px;
+}
+section div.w-1190 div.collect {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+section div.w-1190 div.collect a {
+  width: 110px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  transition: none;
+}
+section div.w-1190 div.collect a i {
+  width: 17px;
+  height: 15px;
+  background-position: -575px -106px;
+  vertical-align: middle;
+}
+section div.w-1190 div.collect a span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  line-height: 40px;
+}
+section div.w-1190 div.collect a:hover i {
+  background-position: -636px -106px;
+}
+section div.w-1190 div.collect a:first-child {
+  background: none;
+  border: 1px solid #ddd;
+}
+section div.w-1190 div.collect a:nth-child(2) {
+  background: #ff9911;
+  border: none;
+  color: #fff;
+  margin-left: 10px;
+}
+section div.house-photo {
+  background: url(../img/details/bg-photo.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 575px;
+  margin-top: 20px;
+  position: relative;
+}
+section div.house-photo div.w-1190 {
+  height: 532px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -266px 0 0 -590px;
+  background: #fff;
+  padding: 25px 0 25px 25px;
+}
+section div.house-photo div.w-1190 img {
+  vertical-align: bottom;
+}
+section div.house-photo div.w-1190 div.photo-left {
+  float: left;
+  width: 690px;
+}
+section div.house-photo div.w-1190 div.photo-left div.toggleBig {
+  position: relative;
+}
+section div.house-photo div.w-1190 div.photo-left div.toggleBig > img {
+  width: 690px;
+  height: 360px;
+}
+section div.house-photo div.w-1190 div.photo-left div.toggleBig > i {
+  background: url(../img/details/btns_photoalbum.gif);
+  width: 59px;
+  height: 86px;
+  position: absolute;
+  top: 50%;
+  margin-top: -43px;
+  display: none;
+}
+section div.house-photo div.w-1190 div.photo-left div.toggleBig > i:first-child {
+  background-position: -10px -10px;
+  left: 0;
+}
+section div.house-photo div.w-1190 div.photo-left div.toggleBig > i:last-child {
+  background-position: -79px -10px;
+  right: 0;
+}
+section div.house-photo div.w-1190 div.photo-left div.toggleBig:hover i {
+  display: block;
+  cursor: pointer;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose {
+  display: flex;
+  height: 90px;
+  margin-top: 27px;
+  justify-content: space-between;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose i {
+  background: url(../img/details/btns_photoalbum.gif) no-repeat;
+  width: 30px;
+  height: 90px;
+  display: inline-block;
+  cursor: pointer;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose i:first-child {
+  background-position: -10px -229px;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose i:first-child.active {
+  background-position: -90px -229px;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose i:last-child {
+  background-position: -50px -229px;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose i:last-child.active {
+  background-position: -130px -229px;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose div.photo-toggle {
+  width: 596px;
+  overflow: hidden;
+  margin: 0 17px;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose div.photo-toggle ul {
+  position: relative;
+  right: 0;
+  width: 9999px;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose div.photo-toggle ul li {
+  float: left;
+  cursor: pointer;
+  margin-right: 20px;
+  border: 2px solid transparent;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose div.photo-toggle ul li img {
+  width: 130px;
+  height: 86px;
+}
+section div.house-photo div.w-1190 div.photo-left div.photo-choose div.photo-toggle ul li.active {
+  border: 2px solid #ff9911;
+}
+section div.house-photo div.w-1190 div.photo-right {
+  float: right;
+  width: 438px;
+}
+section div.house-photo div.w-1190 div.photo-right > div {
+  border-bottom: 1px solid #EDEDED;
+}
+section div.house-photo div.w-1190 div.photo-right > div:last-child {
+  border: none;
+}
+section div.house-photo div.w-1190 div.photo-right div.first-floor > span {
+  color: #ff9911;
+  font-size: 18px;
+}
+section div.house-photo div.w-1190 div.photo-right div.first-floor > span b {
+  font-size: 52px;
+  position: relative;
+  top: 3px;
+}
+section div.house-photo div.w-1190 div.photo-right div.first-floor > div {
+  display: inline-block;
+  margin-left: 5px;
+}
+section div.house-photo div.w-1190 div.photo-right div.first-floor > div p {
+  color: #999;
+}
+section div.house-photo div.w-1190 div.photo-right div.first-floor > div p span {
+  color: #2E2E2E;
+  font-size: 18px;
+  vertical-align: middle;
+}
+section div.house-photo div.w-1190 div.photo-right div.first-floor > div p i {
+  width: 15px;
+  height: 22px;
+  background-position: -503px -159px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+section div.house-photo div.w-1190 div.photo-right div.second {
+  padding: 5px 0;
+}
+section div.house-photo div.w-1190 div.photo-right div.second > div {
+  font-size: 14px;
+  margin: 10px 0;
+}
+section div.house-photo div.w-1190 div.photo-right div.second > div > span {
+  color: #999;
+}
+section div.house-photo div.w-1190 div.photo-right div.second > div p {
+  display: inline-block;
+  margin-left: 40px;
+}
+section div.house-photo div.w-1190 div.photo-right div.second > div p a.line {
+  text-decoration: underline;
+  margin-left: 20px;
+  display: inline-block;
+}
+section div.house-photo div.w-1190 div.photo-right div.second > div p i {
+  background-position: -614px -316px;
+  width: 10px;
+  height: 14px;
+  vertical-align: middle;
+}
+section div.house-photo div.w-1190 div.photo-right div.third {
+  padding: 12px 0;
+}
+section div.house-photo div.w-1190 div.photo-right div.third ul li {
+  float: left;
+  width: 33%;
+}
+section div.house-photo div.w-1190 div.photo-right div.third ul li > h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+section div.house-photo div.w-1190 div.photo-right div.third ul li p {
+  color: #999;
+}
+section div.house-photo div.w-1190 div.photo-right div.third ul li:first-child {
+  text-align: left;
+}
+section div.house-photo div.w-1190 div.photo-right div.forth {
+  padding: 12px 0;
+}
+section div.house-photo div.w-1190 div.photo-right div.forth > a {
+  float: left;
+  width: 90px;
+  height: 90px;
+  background: url(../img/details/man.jpg) center top;
+  background-size: 108%;
+  border-radius: 50%;
+}
+section div.house-photo div.w-1190 div.photo-right div.forth div.forth-right {
+  float: left;
+  margin-left: 20px;
+}
+section div.house-photo div.w-1190 div.photo-right div.forth div.forth-right p {
+  color: #999;
+  margin-bottom: 6px;
+}
+section div.house-photo div.w-1190 div.photo-right div.forth div.forth-right p span {
+  font-size: 20px;
+  color: #333;
+  margin-right: 10px;
+}
+section div.house-photo div.w-1190 div.photo-right div.forth div.forth-right b {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9911;
+}
+section div.house-photo div.w-1190 div.photo-right div.fifth {
+  padding-top: 15px;
+}
+section div.house-photo div.w-1190 div.photo-right div.fifth i {
+  background-position: -392px -489px;
+  width: 35px;
+  height: 42px;
+  vertical-align: middle;
+}
+section div.house-photo div.w-1190 div.photo-right div.fifth span {
+  color: #9C9F9F;
+  margin-left: 10px;
+  font-size: 14px;
+}
+section div.house-photo div.w-1190 div.photo-right div.fifth em {
+  color: #9C9F9F;
+  font-style: normal;
+  margin-left: 20px;
+}
+section div.main {
+  color: #2E2E2E;
+}
+section div.main h1 {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 45px 0 25px;
+  border-bottom: 1px solid #eee;
+}
+section div.main div.opinion div.opinion-main > div {
+  height: 80px;
+  line-height: 80px;
+  font-size: 14px;
+}
+section div.main div.opinion div.opinion-main > div span {
+  color: #999;
+}
+section div.main div.opinion div.opinion-main > div p {
+  display: inline-block;
+  border-bottom: 1px solid #eee;
+  margin-left: 55px;
+  width: 599px;
+}
+section div.main div.opinion div.opinion-main > div p em {
+  font-style: normal;
+}
+section div.main div.opinion div.opinion-main > div p b {
+  display: inline-block;
+  background: #F2F3F7;
+  padding: 7px 7px;
+  line-height: 16px;
+  font-weight: normal;
+}
+section div.main div.opinion a.check {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+section div.main div.opinion a.check span {
+  color: #ff9911;
+}
+section div.main div.opinion > ul {
+  margin-top: 10px;
+}
+section div.main div.opinion > ul li {
+  float: left;
+  margin-top: 20px;
+}
+section div.main div.opinion > ul li img {
+  width: 346px;
+  height: 260px;
+}
+section div.main div.opinion > ul li:nth-child(2),
+section div.main div.opinion > ul li:nth-child(4) {
+  margin-left: 22px;
+}
+section div.main div.opinion div.school {
+  border-top: 1px solid #eee;
+}
+section div.main div.opinion div.school > div {
+  position: relative;
+  padding: 30px 0;
+}
+section div.main div.opinion div.school > div > a {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+section div.main div.opinion div.school > div div.school-left {
+  float: left;
+}
+section div.main div.opinion div.school > div div.school-left > p {
+  font-size: 14px;
+  margin-top: 17px;
+}
+section div.main div.opinion div.school > div div.school-left > p em {
+  font-style: normal;
+  color: #999;
+}
+section div.main div.opinion div.school > div div.school-left > p span {
+  display: inline-block;
+  margin-left: 40px;
+}
+section div.main div.opinion div.school > div div.school-right {
+  float: right;
+  margin-top: 30px;
+}
+section div.main div.opinion div.school > div div.school-right p {
+  font-weight: bold;
+  padding: 0 30px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+}
+section div.main div.opinion div.school > div div.school-right p a {
+  font-size: 14px;
+  text-decoration: none;
+}
+section div.main div.opinion div.school > div div.school-right p em {
+  font-style: normal;
+  display: block;
+  font-weight: normal;
+}
+section div.main div.opinion div.school > div div.school-right p:first-child {
+  border-right: 1px solid #eee;
+}
+section div.main div.opinion div.school div:first-child {
+  border-bottom: 1px solid #eee;
+}
+section div.main div.opinion div.ambitus div.ambitus-header {
+  border-bottom: 1px solid #ddd;
+}
+section div.main div.opinion div.ambitus div.ambitus-header a {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 50px 0 20px;
+  color: #999;
+  margin-right: 40px;
+  cursor: default;
+  text-decoration: none;
+  display: inline-block;
+}
+section div.main div.opinion div.ambitus div.ambitus-header a.active {
+  border-bottom: 3px solid #DDD;
+  color: #333;
+}
+section div.main div.opinion div.ambitus div.ambitus-header a:hover {
+  cursor: pointer;
+}
+section div.main div.opinion div.ambitus div.ambitus-choose {
+  margin-top: 25px;
+}
+section div.main div.opinion div.ambitus div.ambitus-choose > a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+section div.main div.opinion div.ambitus div.ambitus-choose > a.active {
+  background: #E6E6E6;
+  font-weight: bold;
+}
+section div.main div.opinion div.ambitus div.map {
+  margin-top: 20px;
+  display: none;
+}
+section div.main div.opinion div.ambitus div.map div.map-main {
+  width: 65%;
+  height: 370px;
+  display: inline-block;
+}
+section div.main div.opinion div.ambitus div.map div.map-main div.map-school {
+  width: 100%;
+  height: 100%;
+}
+section div.main div.opinion div.ambitus div.map div.map-main div.map-school #allmap {
+  width: 100%;
+  height: 100%;
+}
+section div.main div.opinion div.ambitus div.map div.map-main div.map-school p {
+  margin-left: 5px;
+  font-size: 14px;
+}
+section div.main div.opinion div.ambitus div.map div.map-detail {
+  width: 35%;
+  height: 370px;
+  float: right;
+  overflow: auto;
+  padding: 5px 20px;
+  border: 1px solid #EDEDED;
+}
+section div.main div.opinion div.ambitus div.map div.map-detail > p {
+  color: #2E2E2E;
+  margin-bottom: 10px;
+}
+section div.main div.opinion div.ambitus div.map div.map-detail > div ul li {
+  padding: 7px 0;
+  border-bottom: 1px solid #eee;
+}
+section div.main div.opinion div.ambitus div.map div.map-detail > div ul li a {
+  display: block;
+}
+section div.main div.opinion div.ambitus div.map div.map-detail > div ul li a > i {
+  background: url(../img/details/icons-mapv2-png.png) no-repeat -44px -90px;
+  width: 20px;
+  height: 26px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  color: #fff;
+  font-style: normal;
+  float: left;
+  position: relative;
+  top: 3px;
+}
+section div.main div.opinion div.ambitus div.map div.map-detail > div ul li a > div {
+  float: left;
+  margin-left: 10px;
+}
+section div.main div.opinion div.ambitus div.map div.map-detail > div ul li a > div b {
+  font-size: 14px;
+}
+section div.main div.opinion div.ambitus div.map div.map-detail > div ul li a > div em {
+  display: block;
+  font-style: normal;
+  color: #666;
+}
+section div.main div.opinion div.ambitus div.map div.map-detail > div ul li a > span {
+  float: right;
+}
+section div.main div.opinion div.ambitus div.map div.map-detail > div ul li a:hover {
+  color: #2E2E2E;
+}
+section div.main div.opinion div.ambitus div.toggleVR {
+  width: 100%;
+  height: 370px;
+  display: none;
+  margin-top: 20px;
+}
+section div.main div.opinion div.ambitus div.toggleVR #panorama {
+  width: 100%;
+  height: 370px;
+}
+section div.main div.opinion div.ambitus div.toggleVR #result {
+  width: 100%;
+  font-size: 12px;
+}
+section div.main div.opinion div.ambitus > div.active {
+  display: block;
+}
+section div.main div.opinion div.calculator {
+  margin: 20px 0;
+}
+section div.main div.opinion div.calculator div.calculator-header {
+  border-bottom: 1px solid #ddd;
+}
+section div.main div.opinion div.calculator div.calculator-header a {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 50px 0 20px;
+  color: #999;
+  margin-right: 40px;
+  cursor: default;
+  text-decoration: none;
+  display: inline-block;
+}
+section div.main div.opinion div.calculator div.calculator-header a.active {
+  border-bottom: 3px solid #DDD;
+  color: #333;
+}
+section div.main div.opinion div.calculator div.calculator-header a:hover {
+  cursor: pointer;
+}
+section div.main div.opinion div.calculator div.calculator-main {
+  margin-top: 40px;
+  display: none;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left {
+  position: relative;
+  float: left;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul {
+  float: left;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li {
+  padding: 20px 0;
+  font-size: 14px;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > span {
+  color: #999;
+  width: 88px;
+  display: inline-block;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > div {
+  margin-left: 50px;
+  padding-left: 20px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > div > i {
+  background-position: -49px -146px;
+  width: 9px;
+  height: 5px;
+  vertical-align: middle;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > div > span {
+  width: 250px;
+  display: inline-block;
+  cursor: pointer;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > div > input {
+  width: 250px;
+  border: none;
+  outline: none;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > div > ul.toggleDown {
+  width: 100%;
+  max-height: 275px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding-left: 20px;
+  z-index: 10;
+  overflow: auto;
+  display: none;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > div > ul.toggleDown li {
+  width: 100%;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > div > ul.toggleDown li p {
+  transition: all 200ms linear;
+  padding: 15px 0;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > div > ul.toggleDown li p:hover {
+  color: #ff9911;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > div > ul.active {
+  display: block;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > div.contain > span {
+  width: 150px;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left > ul > li > input {
+  width: 66px;
+  border: none;
+  outline: none;
+  margin-left: 20px;
+  text-align: center;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left button {
+  width: 136px;
+  height: 40px;
+  position: absolute;
+  bottom: -38px;
+  left: 134px;
+  border-radius: 3px;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-left button:hover {
+  background: #FF7E00;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-right {
+  float: right;
+  font-size: 14px;
+  margin-top: 20px;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-right > p > a {
+  color: #C9C8C8;
+  text-decoration: none;
+  margin-right: 10px;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-right > p > a b {
+  background-position: -535px -28px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-right > p > a span {
+  vertical-align: middle;
+  font-weight: bold;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-right > p > a.active {
+  color: #333;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-right > div.Principal > div {
+  margin: 20px 0;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-right > div.Principal > div span {
+  color: #999;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-right > div.Principal > div em {
+  color: #2E2E2E;
+  float: right;
+  font-style: normal;
+}
+section div.main div.opinion div.calculator div.calculator-main div.calculator-main-right > div.Principal > div .bold {
+  font-weight: bold;
+  color: #2E2E2E;
+}
+section div.main div.opinion div.calculator > div.active {
+  display: block;
+}
+section div.main div.opinion div.information {
+  margin-top: 30px;
+}
+section div.main div.opinion div.information div.information-left > a {
+  float: left;
+}
+section div.main div.opinion div.information div.information-left > div {
+  float: left;
+  margin-left: 40px;
+}
+section div.main div.opinion div.information div.information-left > div > p {
+  font-size: 18px;
+}
+section div.main div.opinion div.information div.information-left > div > p b {
+  font-size: 24px;
+  margin-right: 20px;
+}
+section div.main div.opinion div.information div.information-left > div > div {
+  font-size: 14px;
+}
+section div.main div.opinion div.information div.information-left > div > div p {
+  margin: 10px 0;
+}
+section div.main div.opinion div.information div.information-left > div > div p span {
+  color: #999;
+  width: 60px;
+  display: inline-block;
+  margin-right: 20px;
+}
+section div.main div.opinion div.information div.information-left > div > div p em {
+  font-style: normal;
+}
+section div.main div.opinion div.information div.information-left > div > div p em i {
+  width: 10px;
+  height: 14px;
+  background-position: -535px -126px;
+  vertical-align: middle;
+}
+section div.main div.opinion div.history ul li {
+  padding: 27px 0;
+  border-bottom: 1px solid #eee;
+}
+section div.main div.opinion div.history ul li p {
+  float: left;
+  font-size: 14px;
+  text-align: center;
+}
+section div.main div.opinion div.history ul li p.first {
+  width: 90px;
+}
+section div.main div.opinion div.history ul li p.second {
+  width: 90px;
+}
+section div.main div.opinion div.history ul li p.third {
+  width: 110px;
+}
+section div.main div.opinion div.history ul li p.fourth {
+  width: 90px;
+}
+section div.main div.opinion div.history ul li p.fifth {
+  width: 90px;
+}
+section div.main div.opinion div.history ul li p.sixth {
+  width: 110px;
+}
+section div.main div.opinion div.history ul li p.seventh {
+  width: 110px;
+}
+section div.main div.opinion div.history ul li:first-child p {
+  color: #999;
+}
+section div.main div.housing-resources ul {
+  margin-top: 20px;
+}
+section div.main div.housing-resources ul li {
+  margin-left: 46px;
+  float: left;
+}
+section div.main div.housing-resources ul li > a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: bold;
+  width: 263px;
+  margin-top: 10px;
+}
+section div.main div.housing-resources ul li > p {
+  color: #999;
+  line-height: 25px;
+  margin-top: 3px;
+}
+section div.main div.housing-resources ul li > p span {
+  margin-right: 10px;
+  display: inline-block;
+}
+section div.main div.housing-resources ul li > p em {
+  float: right;
+  font-style: normal;
+}
+section div.main div.housing-resources ul li > p em b {
+  color: #ff9911;
+  font-size: 22px;
+}
+section div.main div.housing-resources ul li:first-child {
+  margin: 0;
+}
+section div.main div.newHouse li {
+  position: relative;
+}
+section div.main div.newHouse b {
+  font-size: 18px;
+  color: #ff9911;
+  margin-right: 3px;
+}
+section div.main div.newHouse div {
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 167px;
+  left: 0;
+}
+section div.main div.quickAction {
+  position: fixed;
+  top: 0;
+  width: 1190px;
+  height: 40px;
+  border-bottom: 2px solid #ff9911;
+  background: #fff;
+  display: none;
+  overflow: hidden;
+}
+section div.main div.quickAction ul li {
+  float: left;
+  line-height: 38px;
+  padding: 0 20px;
+}
+section div.main div.quickAction ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #2e2e2e;
+}
+section div.main div.quickAction ul li.active {
+  background: #ff9911;
+}
+section div.main div.quickAction ul li.active a {
+  color: #fff;
+}
+section div.main div.quickAction ul li.hover {
+  background: #eee;
+}
+section div.main div.show {
+  display: block;
+}
+section div.main div.fixed-right {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  display: none;
+}
+section div.main div.fixed-right h2 {
+  margin-bottom: 20px;
+}
+section div.main div.fixed-right > div {
+  width: 400px;
+}
+section div.main div.fixed-right > div > div {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+section div.main div.fixed-right > div > div > a {
+  float: left;
+  width: 90px;
+  height: 90px;
+  background: url(../img/details/man.jpg) center top;
+  background-size: 108%;
+  border-radius: 50%;
+}
+section div.main div.fixed-right > div > div > p {
+  color: #999;
+  width: 300px;
+}
+section div.main div.fixed-right > div > div > p > a {
+  font-size: 20px;
+  margin-right: 10px;
+}
+section div.main div.fixed-right > div > div > b {
+  font-size: 20px;
+  color: #ff9911;
+}
+section div.main div.fixed-right > div > div > p:nth-child(2) {
+  padding-top: 10px;
+}
+section div.main div.fixed-right > div > p {
+  text-align: center;
+  margin-top: 15px;
+}
+section div.main div.fixed-right > div > p > a {
+  width: 190px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #2e2e2e;
+  text-decoration: none;
+}
+section div.main div.fixed-right > div > p a:hover {
+  border-color: #999;
+}
+div.w-714 {
+  width: 714px;
+}
+div.footer-main {
+  width: 100%;
+  height: 425px;
+  background: url(../img/bgi-footer.jpg) no-repeat center;
+  color: #999;
+  font-size: 14px;
+  margin-top: 40px;
+}
+div.footer-main div.connect {
+  height: 75px;
+  padding-top: 30px;
+  border-bottom: 1px solid #4D4D4D;
+}
+div.footer-main div.connect div.connect-right {
+  float: right;
+  height: 60px;
+  margin-top: -13px;
+}
+div.footer-main div.connect div.connect-right i {
+  background-position: -392px -444px;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+div.footer-main div.connect p a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px;
+}
+div.footer-main div.connect p a:hover {
+  text-decoration: underline;
+}
+div.footer-main div.friendLink {
+  border-bottom: 1px solid #4D4D4D;
+  padding: 30px 0 15px;
+  position: relative;
+}
+div.footer-main div.friendLink a {
+  color: #999;
+  text-decoration: none;
+}
+div.footer-main div.friendLink ul li {
+  float: left;
+  margin-right: 10px;
+}
+div.footer-main div.friendLink ul li a {
+  background: #0F0F0F;
+  display: inline-block;
+  padding: 6px 12px;
+}
+div.footer-main div.friendLink ul li a.hover {
+  color: #fff;
+  background: #666;
+}
+div.footer-main div.friendLink ul li a.active {
+  background: #666;
+  color: #fff;
+}
+div.footer-main div.friendLink div.links-main {
+  margin-top: 25px;
+  display: none;
+}
+div.footer-main div.friendLink div.links-main p {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+div.footer-main div.friendLink div.links-main p a:hover {
+  text-decoration: underline;
+}
+div.footer-main div.friendLink div.active {
+  display: block;
+}
+div.footer-main div.letter {
+  margin-top: 25px;
+  font-size: 12px;
+}
+div.footer-main div.letter a {
+  color: #999;
+  text-decoration: none;
+}
+div.footer-main div.letter a:hover {
+  text-decoration: underline;
+}
+div.footer-main div.letter > div {
+  margin-top: 7px;
+}
+div.footer-main div.letter > div img {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+#fixed-top {
+  position: fixed;
+  right: 10px;
+  top: 40%;
+}
+#fixed-top i {
+  display: block;
+  background: url(../img/icons-sidetools.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+}
+#fixed-top i b {
+  position: absolute;
+  font-style: normal;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  font-weight: normal;
+  color: #5d5d5d;
+  display: none;
+  opacity: 0;
+  transition: all 300ms linear;
+}
+#fixed-top i b span {
+  position: absolute;
+  background: url(../img/icons-sidetools.png) no-repeat -160px -160px;
+  width: 8px;
+  height: 16px;
+  bottom: 10px;
+  right: -8px;
+}
+#fixed-top i:first-child {
+  background-position: -60px -110px;
+}
+#fixed-top i:first-child b {
+  background: url(../img/icons-sidetools.png) no-repeat -154px -5px #ffffff;
+  width: 113px;
+  height: 132px;
+  bottom: 0;
+  right: 62px;
+  padding-top: 110px;
+}
+#fixed-top i:first-child:hover {
+  background-position: -110px -110px;
+}
+#fixed-top i:last-child {
+  background-position: -60px -210px;
+  display: none;
+}
+#fixed-top i:last-child b {
+  background: #fff;
+  width: 106px;
+  height: 40px;
+  bottom: 0;
+  right: 62px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+}
+#fixed-top i:last-child:hover {
+  background-position: -110px -210px;
+}
+#fixed-top i.show {
+  display: block;
+}
+#exit{
+  display:none;
+}

@@ -1,0 +1,989 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 12px/1.5 Arial, Tahoma, "Microsoft YaHei", "\5fae\8f6f\96c5\9ed1", sans-serif;
+  color: #2e2e2e;
+}
+body,html{
+  min-width:1200px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.clear:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.w-1190 {
+  width: 1190px;
+  margin: 0 auto;
+}
+.icon {
+  display: inline-block;
+  background: url(../img/icons.png) no-repeat;
+}
+a {
+  color: #B2B2B2;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.orange {
+  color: #FF9911 !important;
+}
+.btn {
+  display: inline-block;
+  background: #FF9911;
+  color: #fff;
+  text-align: center;
+  border: none;
+  font-family: 'Microsoft YaHei';
+  outline: none;
+  position: relative;
+  left: -3px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  border-radius: 0 3px 3px 0;
+}
+header {
+  width: 100%;
+}
+header nav {
+  width: 100%;
+  background: #333;
+}
+header nav div.header-top-main {
+  height: 35px;
+  padding-right: 20px;
+}
+header nav div.header-top-main ul {
+  height: 35px;
+}
+header nav div.header-top-main ul li {
+  float: left;
+  line-height: 35px;
+  position: relative;
+  padding-bottom: 15px;
+}
+header nav div.header-top-main ul li a {
+  padding: 0 15px;
+  display: block;
+}
+header nav div.header-top-main div.header-top-main-left {
+  float: left;
+  height: 35px;
+}
+header nav div.header-top-main div.header-top-main-left ul li div.nav-down {
+  position: absolute;
+}
+header nav div.header-top-main div.header-top-main-right {
+  float: right;
+}
+header nav div.header-top-main div.header-top-main-right ul.register li {
+  color: #B2B2B2;
+}
+header nav div.header-top-main div.header-top-main-right ul.register li a {
+  padding: 0 3px;
+}
+header nav div.header-top-main .nav-down {
+  width: 121px;
+  padding: 7px 0;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -61px;
+  background: #fff;
+  box-shadow: 0 0 5px #999;
+  opacity: 0;
+  transition: all 200ms linear;
+  z-index: 100;
+  display: none;
+}
+header nav div.header-top-main .nav-down p {
+  text-align: center;
+  line-height: normal;
+}
+header nav div.header-top-main .nav-down p a {
+  color: #666 !important;
+  display: block;
+  font-size: 14px;
+  font-weight: normal !important;
+  line-height: 30px;
+  transition: all 200ms linear;
+}
+header nav div.header-top-main .nav-down p a.qrcode {
+  background-position: -464px -198px;
+  height: 105px;
+  width: 120px;
+}
+header nav div.header-top-main .nav-down p a:hover {
+  color: #FF9911 !important;
+  text-decoration: underline;
+}
+header nav div.header-top-main .nav-down .f2 {
+  width: 16px;
+  height: 8px;
+  background-position: -528px -181px;
+  position: absolute;
+  top: -8px;
+  left: 53px;
+}
+header div.header-main {
+  height: 70px;
+}
+header div.header-main div.logo {
+  float: left;
+  line-height: 70px;
+  position: relative;
+}
+header div.header-main div.logo > a {
+  margin-left: 20px;
+  width: 185px;
+  height: 28px;
+  background-position: -468px -472px;
+  vertical-align: middle;
+}
+header div.header-main div.logo > span {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: #FF9911;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 5px;
+  color: #fff;
+}
+header div.header-main div.logo div.location {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  left: 20px;
+  width: 73px;
+}
+header div.header-main div.logo div.location b {
+  height: 60px;
+  border-left: 1px solid #dede16;
+  position: relative;
+  left: -10px;
+}
+header div.header-main div.logo div.location a {
+  color: #666;
+  text-decoration: none;
+}
+header div.header-main div.logo div.location span {
+  color: #999;
+  margin-left: 3px;
+}
+header div.header-main div.logo #location-main {
+  width: 680px;
+  height: 374px;
+  padding: 22px 30px;
+  position: absolute;
+  top: 100px;
+  left: 242px;
+  background: #fff;
+  z-index: 888;
+  opacity: 0;
+  transition: all 300ms linear;
+  display: none;
+}
+header div.header-main div.logo #location-main #location-main-closed {
+  cursor: pointer;
+}
+header div.header-main div.logo #location-main .none1 {
+  display: none;
+}
+header div.header-main div.logo #location-main p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+header div.header-main div.logo #location-main ul {
+  width: 100%;
+  margin-top: 12px;
+}
+header div.header-main div.logo #location-main ul li {
+  width: 50%;
+  float: left;
+  line-height: 30px;
+  font-size: 14px;
+  margin-top: 3px;
+}
+header div.header-main div.logo #location-main ul li i {
+  width: 23px;
+  height: 23px;
+  background: #eee;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 23px;
+  text-align: center;
+  font-style: normal;
+}
+header div.header-main div.logo #location-main ul li a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 200ms linear;
+  color: #666;
+}
+header div.header-main div.logo #location-main ul li a:hover {
+  color: #FF9911;
+  text-decoration: underline;
+}
+header div.header-main div.logo #location-main b {
+  position: absolute;
+  top: -8px;
+  left: 38px;
+  width: 16px;
+  height: 8px;
+  background-position: -528px -181px;
+}
+header div.header-main div.logo #location-main span {
+  position: absolute;
+  top: -15px;
+  left: 660px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #DADADA;
+  background-position: -66px -100px;
+  transition: all 200ms linear;
+}
+header div.header-main div.logo #location-main span:hover {
+  background-color: #FF9911;
+}
+header div.header-main div.logo div.block1 {
+  display: block !important;
+}
+header div.header-main ul.header-main-link {
+  margin: 20px 0 0 70px;
+  float: left;
+}
+header div.header-main ul.header-main-link li {
+  float: left;
+  margin-left: 30px;
+}
+header div.header-main ul.header-main-link li a {
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 300ms linear;
+  text-decoration: none;
+}
+header div.header-main ul.header-main-link li a:hover,
+header div.header-main ul.header-main-link li a.hover {
+  color: #FF9911;
+}
+div.banner {
+  width: 100%;
+  position: relative;
+}
+div.banner div.banner-photos {
+  width: 100%;
+  position: relative;
+  height: 525px;
+  overflow: hidden;
+}
+div.banner div.banner-photos ul.lunhuan {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+div.banner div.banner-photos ul.lunhuan li {
+  width: 100%;
+  position: absolute;
+}
+div.banner div.banner-photos ul.lunhuan li > a {
+  display: inline-block;
+  width: 100%;
+  height: 525px;
+}
+div.banner div.banner-photos ul.lunhuan li:first-child {
+  left: 0;
+}
+div.banner div.banner-photos ul.lunhuan li:first-child > a:first-child {
+  background: url(../img/newHouse/lunhuan1.jpg) center center;
+}
+div.banner div.banner-photos ul.lunhuan li:nth-child(2) {
+  left: 100%;
+}
+div.banner div.banner-photos ul.lunhuan li:nth-child(2) > a:first-child {
+  background: url(../img/newHouse/lunhuan2.jpg) center center;
+}
+div.banner div.banner-photos ul.lunhuan li:nth-child(3) {
+  left: 200%;
+}
+div.banner div.banner-photos ul.lunhuan li:nth-child(3) > a:first-child {
+  background: url(../img/newHouse/lunhuan3.jpg) center center;
+}
+div.banner div.banner-photos ul.lunhuan li:nth-child(4) {
+  left: 300%;
+}
+div.banner div.banner-photos ul.lunhuan li:nth-child(4) > a:first-child {
+  background: url(../img/newHouse/lunhuan4.jpg) center center;
+}
+div.banner div.banner-photos ul.lunhuan li:nth-child(5) {
+  left: 400%;
+}
+div.banner div.banner-photos ul.lunhuan li:nth-child(5) > a:first-child {
+  background: url(../img/newHouse/lunhuan5.jpg) center center;
+}
+div.banner div.banner-photos ul.lunhuan li:nth-child(6) {
+  left: 500%;
+}
+div.banner div.banner-photos ul.lunhuan li:nth-child(6) > a:first-child {
+  background: url(../img/newHouse/lunhuan1.jpg) center center;
+}
+div.banner div.banner-photos ul.clear {
+  position: absolute;
+  bottom: 160px;
+  left: 50%;
+  margin-left: -32.5px;
+}
+div.banner div.banner-photos ul.clear li {
+  float: left;
+  margin-left: 5px;
+  height: 10px;
+}
+div.banner div.banner-photos ul.clear li a {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: .8;
+  display: inline-block;
+}
+div.banner div.banner-photos ul.clear li a.active {
+  background: #FF9911;
+}
+div.banner div.search {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+div.banner div.search div.search-inner {
+  width: 960px;
+  margin: 0 auto;
+}
+div.banner div.search div.search-inner div.search-box {
+  margin-top: 15px;
+  line-height: 54px;
+}
+div.banner div.search div.search-inner div.search-box span {
+  float: left;
+}
+div.banner div.search div.search-inner div.search-box input {
+  width: 702px;
+  height: 54px;
+  outline: none;
+  padding: 0 20px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+}
+div.banner div.search div.search-inner div.search-box button {
+  width: 108px;
+  height: 54px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  border-radius: 0 3px 3px 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+div.banner div.search div.search-inner div.search-box button:hover {
+  background: #FF7E00;
+}
+div.banner div.search div.search-inner div.search-box a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+div.banner div.search div.search-inner div.search-box a i {
+  width: 32px;
+  height: 31px;
+  background-position: -10px -159px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+div.banner div.search div.search-inner p {
+  color: #A7A7A7;
+  margin: 13px 0 0 20px;
+}
+div.banner div.search div.search-inner p a {
+  margin-right: 30px;
+  display: inline-block;
+  transition: all 200ms linear;
+}
+div.banner div.search div.search-inner p a:hover {
+  color: #FF9911;
+}
+#main > div .main {
+  padding: 50px 0;
+}
+#main > div .main h1 {
+  font-size: 34px;
+}
+#main > div .main > p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+#main > div .main ul {
+  margin-top: 40px;
+}
+#main > div .main ul li {
+  float: left;
+  margin-left: 22px;
+  margin-bottom: 18px;
+  position: relative;
+}
+#main > div .main ul li span {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: #fff;
+  font-size: 26px;
+  margin-top: -30px;
+  text-shadow: 0 2px 4px #666;
+}
+#main > div .main ul li span b {
+  font-size: 24px;
+}
+#main > div .main ul li span p {
+  font-size: 16px;
+  font-weight: normal;
+  padding-right: -5px;
+}
+#main > div .main ul li:first-child {
+  margin-left: 0;
+}
+#main > div .main ul li:first-child span {
+  margin-top: -39px;
+}
+#main .first-floor .main {
+  text-align: center;
+}
+#main .first-floor .main h1 {
+  font-size: 34px;
+}
+#main .first-floor .main > p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+#main .first-floor .main ul li:nth-child(4) {
+  margin-left: 0;
+}
+#main .second-floor {
+  width: 100%;
+  background: url(../img/newHouse/bgi-group-buying.jpg) center center no-repeat;
+  height: 660px;
+}
+#main .second-floor div.main {
+  text-align: center;
+}
+#main .second-floor div.main ul li {
+  position: relative;
+}
+#main .second-floor div.main ul li > a img {
+  width: 584px;
+  height: 329px;
+}
+#main .second-floor div.main ul li > p {
+  width: 208px;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 14px;
+  left: -9px;
+  color: #fff;
+  background: #FF6600;
+  padding: 5px;
+}
+#main .second-floor div.main ul li > div {
+  width: 280px;
+  height: 219px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  top: 52px;
+  right: 20px;
+  text-align: center;
+  padding: 15px 0;
+}
+#main .second-floor div.main ul li > div > a {
+  color: #fff;
+  font-size: 24px;
+}
+#main .second-floor div.main ul li > div > a:hover {
+  color: #fff;
+  font-size: 24px;
+}
+#main .second-floor div.main ul li > div p {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 8px;
+}
+#main .second-floor div.main ul li > div p b {
+  color: #FF6600;
+}
+#main .second-floor div.main ul li > div > div {
+  width: 80%;
+  margin: 10px auto;
+  border-top: 1px solid #7D7D7D;
+  padding-top: 15px;
+}
+#main .second-floor div.main ul li > div > div button {
+  width: 132px;
+  height: 40px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+#main .second-floor div.main ul li > div > div button:hover {
+  background: #FF7E00;
+}
+#main .second-floor div.main > a {
+  width: 210px;
+  height: 50px;
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 200ms linear;
+}
+#main .second-floor div.main > a:hover {
+  background: #FF7E00;
+  color: #fff;
+  border: 1px solid #FF7E00;
+}
+#main .third-floor .main {
+  text-align: center;
+}
+#main .third-floor .main h1 {
+  font-size: 34px;
+}
+#main .third-floor .main > p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+#main .third-floor .main div.pic-box {
+  width: 102%;
+  height: 333px;
+  overflow: hidden;
+  position: relative;
+  left: -1%;
+}
+#main .third-floor .main div.pic-box ul {
+  position: absolute;
+  width: 3000px;
+  left: 12px;
+  transition: all 300ms linear;
+}
+#main .third-floor .main div.pic-box ul li a span {
+  font-size: 30px;
+  font-weight: bold;
+}
+#main .third-floor .main div.pic-box ul li a span p {
+  font-size: 14px;
+}
+#main .third-floor .main div.pic-box ul li a img {
+  width: 281px;
+  height: 211px;
+}
+#main .third-floor .main div.pic-box ul li a div {
+  background: rgba(0, 0, 0, 0.3);
+  width: 281px;
+  height: 210px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main .third-floor .main div.pic-box ul li:first-child {
+  margin-left: 0;
+}
+#main .third-floor .main div.pic-box ul li:first-child span {
+  margin-top: -30px;
+}
+#main .third-floor .main div.pic-box div {
+  margin-top: 300px;
+  margin-bottom: 20px;
+}
+#main .third-floor .main div.pic-box div i {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: #CCC;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+#main .third-floor .main div.pic-box div i.active {
+  background: #333;
+}
+#main .third-floor .main div.pic-box > p {
+  position: absolute;
+  width: 55px;
+  height: 106px;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+}
+#main .third-floor .main div.pic-box p:nth-child(3) {
+  top: 90px;
+  left: 0px;
+  background-position: -10px -200px;
+}
+#main .third-floor .main div.pic-box p:nth-child(4) {
+  top: 90px;
+  right: 0px;
+  background-position: -75px -200px;
+}
+#main .third-floor .main div.pic-box p:nth-child(3):hover {
+  background-position: -140px -200px;
+}
+#main .third-floor .main div.pic-box p:nth-child(4):hover {
+  background-position: -205px -200px;
+}
+#main .third-floor .main div.pic-box > i {
+  width: 12px;
+  height: 211px;
+  position: absolute;
+  background: #fff;
+}
+#main .third-floor .main div.pic-box i:nth-child(5) {
+  left: 0;
+  top: 40px;
+}
+#main .third-floor .main div.pic-box i:nth-child(6) {
+  right: 0;
+  top: 40px;
+}
+#main .third-floor .main div.pic-box i.gray-color {
+  background: #f9f9f9;
+}
+#main .third-floor .main > a {
+  width: 210px;
+  height: 50px;
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 15px auto;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 200ms linear;
+}
+#main .third-floor .main > a:hover {
+  background: #FF7E00;
+  color: #fff;
+  border: 1px solid #FF7E00;
+}
+#main > div:nth-child(4) {
+  background: #F9F9F9;
+}
+#main .fifth-floor {
+  width: 100%;
+  height: 660px;
+  margin-top: 20px;
+}
+#main .fifth-floor div.main > h1,
+#main .fifth-floor div.main > p {
+  text-align: center;
+}
+#main .fifth-floor div.main ul li {
+  position: relative;
+}
+#main .fifth-floor div.main ul li > a img {
+  width: 584px;
+  height: 329px;
+}
+#main .fifth-floor div.main ul li > div {
+  width: 280px;
+  height: 219px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  top: 52px;
+  right: 20px;
+  padding: 20px;
+}
+#main .fifth-floor div.main ul li > div > a {
+  color: #fff;
+  font-size: 18px;
+}
+#main .fifth-floor div.main ul li > div > a:hover {
+  color: #fff;
+}
+#main .fifth-floor div.main ul li > div p {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 8px;
+}
+#main .fifth-floor div.main ul li > div > div {
+  padding-top: 20px;
+}
+#main .fifth-floor div.main ul li > div > div button {
+  width: 80px;
+  height: 30px;
+  border-radius: 3px;
+  font-size: 14px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: none;
+}
+#main .fifth-floor div.main ul li > div > div button:hover {
+  background: #FF7E00;
+  border-color: #FF7E00;
+}
+#main .fifth-floor div.main > a {
+  width: 210px;
+  height: 50px;
+  border: 1px solid #999;
+  color: #999;
+  border-radius: 3px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 200ms linear;
+}
+#main .fifth-floor div.main > a:hover {
+  background: #FF7E00;
+  color: #fff;
+  border: 1px solid #FF7E00;
+}
+footer {
+  border-top: 2px solid #F9F9F9;
+}
+div.footer-top ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+div.footer-top ul li {
+  width: 25%;
+  padding: 35px 25px;
+}
+div.footer-top ul li i {
+  background-position: -287px -201px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  vertical-align: top;
+}
+div.footer-top ul li div {
+  display: inline-block;
+  width: 183px;
+  margin-left: 10px;
+}
+div.footer-top ul li div h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+div.footer-top ul li div p {
+  color: #999;
+  font-size: 14px;
+}
+div.footer-top ul li:nth-child(2) i {
+  background-position: -345px -201px;
+}
+div.footer-top ul li:nth-child(3) i {
+  background-position: -287px -259px;
+}
+div.footer-top ul li:nth-child(4) i {
+  background-position: -345px -259px;
+}
+div.footer-main {
+  width: 100%;
+  height: 425px;
+  background: url(../img/bgi-footer.jpg) no-repeat center;
+  color: #999;
+  font-size: 14px;
+}
+div.footer-main div.connect {
+  height: 75px;
+  padding-top: 30px;
+  border-bottom: 1px solid #4D4D4D;
+}
+div.footer-main div.connect div.connect-right {
+  float: right;
+  height: 60px;
+  margin-top: -13px;
+}
+div.footer-main div.connect div.connect-right i {
+  background-position: -392px -444px;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+div.footer-main div.connect p a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px;
+}
+div.footer-main div.connect p a:hover {
+  text-decoration: underline;
+}
+div.footer-main div.friendLink {
+  border-bottom: 1px solid #4D4D4D;
+  padding: 30px 0 15px;
+  position: relative;
+}
+div.footer-main div.friendLink a {
+  color: #999;
+  text-decoration: none;
+}
+div.footer-main div.friendLink ul li {
+  float: left;
+  margin-right: 10px;
+}
+div.footer-main div.friendLink ul li a {
+  background: #0F0F0F;
+  display: inline-block;
+  padding: 6px 12px;
+}
+div.footer-main div.friendLink ul li a.hover {
+  color: #fff;
+  background: #666;
+}
+div.footer-main div.friendLink ul li a.active {
+  background: #666;
+  color: #fff;
+}
+div.footer-main div.friendLink div.links-main {
+  margin-top: 25px;
+  display: none;
+}
+div.footer-main div.friendLink div.links-main p {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+div.footer-main div.friendLink div.links-main p a:hover {
+  text-decoration: underline;
+}
+div.footer-main div.friendLink div.active {
+  display: block;
+}
+div.footer-main div.letter {
+  margin-top: 25px;
+  font-size: 12px;
+}
+div.footer-main div.letter a {
+  color: #999;
+  text-decoration: none;
+}
+div.footer-main div.letter a:hover {
+  text-decoration: underline;
+}
+div.footer-main div.letter > div {
+  margin-top: 7px;
+}
+div.footer-main div.letter > div img {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+#fixed-top {
+  position: fixed;
+  right: 10px;
+  top: 40%;
+}
+#fixed-top i {
+  display: block;
+  background: url(../img/icons-sidetools.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+}
+#fixed-top i b {
+  position: absolute;
+  font-style: normal;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  font-weight: normal;
+  color: #5d5d5d;
+  display: none;
+  opacity: 0;
+  transition: all 300ms linear;
+}
+#fixed-top i b span {
+  position: absolute;
+  background: url(../img/icons-sidetools.png) no-repeat -160px -160px;
+  width: 8px;
+  height: 16px;
+  bottom: 10px;
+  right: -8px;
+}
+#fixed-top i:first-child {
+  background-position: -60px -110px;
+}
+#fixed-top i:first-child b {
+  background: url(../img/icons-sidetools.png) no-repeat -154px -5px #ffffff;
+  width: 113px;
+  height: 132px;
+  bottom: 0;
+  right: 62px;
+  padding-top: 110px;
+}
+#fixed-top i:first-child:hover {
+  background-position: -110px -110px;
+}
+#fixed-top i:last-child {
+  background-position: -60px -210px;
+  display: none;
+}
+#fixed-top i:last-child b {
+  background: #fff;
+  width: 106px;
+  height: 40px;
+  bottom: 0;
+  right: 62px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+}
+#fixed-top i:last-child:hover {
+  background-position: -110px -210px;
+}
+#fixed-top i.show {
+  display: block;
+}
+#exit{
+  display:none;
+}

@@ -1,0 +1,562 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 12px/1.5 Arial, Tahoma, "Microsoft YaHei", "\5fae\8f6f\96c5\9ed1", sans-serif;
+  color: #333;
+}
+body,html{
+  min-width:1200px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dd,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.clear:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.w-1190 {
+  width: 1190px;
+  margin: 0 auto;
+}
+.icon {
+  display: inline-block;
+  background: url(../img/icons.png) no-repeat;
+}
+.f2 {
+  width: 16px;
+  height: 8px;
+  background-position: -528px -181px;
+  position: absolute;
+  top: -8px;
+  left: 53px;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background: #333;
+}
+div.header-top {
+  line-height: 50px;
+  height: 50px;
+  top: -100px;
+  width: 100%;
+  z-index: 9999;
+  transition: all 300ms linear;
+}
+div.header-top-main.w-1190 {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-content: center;
+}
+div.header-top-main.w-1190 div.header-top-main-left {
+  position: relative;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo {
+  float: left;
+  position: relative;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo > a {
+  margin-left: 20px;
+  width: 185px;
+  height: 28px;
+  background-position: -10px -542px;
+  vertical-align: middle;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo > span {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: #FF9911;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 5px;
+  color: #fff;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo div.location {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  left: 20px;
+  width: 73px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo div.location b {
+  height: 60px;
+  border-left: 1px solid #999;
+  position: relative;
+  left: -10px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo div.location a {
+  color: #fff;
+  text-decoration: none;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo div.location span {
+  color: #999;
+  margin-left: 3px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main {
+  width: 680px;
+  height: 374px;
+  padding: 22px 30px;
+  position: absolute;
+  top: 100px;
+  left: 242px;
+  background: #fff;
+  z-index: 888;
+  opacity: 0;
+  transition: all 300ms linear;
+  display: none;
+  box-shadow: 2px 2px 2px #999;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main #location-main-closed {
+  cursor: pointer;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main .none1 {
+  display: none;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main ul {
+  width: 100%;
+  margin-top: 12px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main ul li {
+  width: 50%;
+  float: left;
+  line-height: 30px;
+  font-size: 14px;
+  margin-top: 3px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main ul li i {
+  width: 23px;
+  height: 23px;
+  background: #eee;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 23px;
+  text-align: center;
+  font-style: normal;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main ul li a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 200ms linear;
+  color: #666;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main ul li a:hover {
+  color: #FF9911;
+  text-decoration: underline;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main b {
+  position: absolute;
+  top: -8px;
+  left: 38px;
+  width: 16px;
+  height: 8px;
+  background-position: -528px -181px;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main span {
+  position: absolute;
+  top: -15px;
+  left: 660px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #DADADA;
+  background-position: -66px -100px;
+  transition: all 200ms linear;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo #location-main span:hover {
+  background-color: #FF9911;
+}
+div.header-top-main.w-1190 div.header-top-main-left div.logo div.block1 {
+  display: block !important;
+}
+div.header-top-main.w-1190 div.header-top-main-right {
+  display: flex;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.nav {
+  font-size: 16px;
+  display: flex;
+  line-height: 50px;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.nav li {
+  padding: 0 12px;
+  text-align: center;
+  position: relative;
+  height: 80px;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.nav li a:hover {
+  text-decoration: underline;
+}
+div.header-top-main.w-1190 div.header-top-main-right .nav-down {
+  width: 121px;
+  padding: 7px 0;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -61px;
+  background: #fff;
+  box-shadow: 0 0 10px #999;
+  opacity: 0;
+  transition: all 200ms linear;
+  z-index: 100;
+  display: none;
+}
+div.header-top-main.w-1190 div.header-top-main-right .nav-down p {
+  text-align: center;
+  line-height: normal;
+}
+div.header-top-main.w-1190 div.header-top-main-right .nav-down p a {
+  color: #666 !important;
+  display: block;
+  font-size: 14px;
+  font-weight: normal !important;
+  line-height: 30px;
+  transition: all 200ms linear;
+}
+div.header-top-main.w-1190 div.header-top-main-right .nav-down p a.qrcode {
+  background-position: -464px -198px;
+  height: 105px;
+  width: 120px;
+}
+div.header-top-main.w-1190 div.header-top-main-right .nav-down p a:hover {
+  color: #FF9911 !important;
+  text-decoration: underline;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.register {
+  margin-left: 20px;
+  display: flex;
+  color: #fff;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.register li {
+  padding-bottom: 30px;
+  text-align: center;
+  position: relative;
+  height: 80px;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.register li a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+div.header-top-main.w-1190 div.header-top-main-right ul.register li a:hover {
+  text-decoration: underline;
+}
+.orange {
+  color: #FF9911 !important;
+}
+section {
+  background: url(../img/bgi-login.jpg) center center no-repeat;
+  height: 1033px;
+  width: 100%;
+  background-size: cover;
+}
+section div.w-1190 {
+  padding: 100px 0 160px;
+}
+section div.w-1190 h1 {
+  font-size: 70px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 2px #999;
+  letter-spacing: 3px;
+}
+section div.w-1190 > p {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+section div.w-1190 div.register-main {
+  width: 500px;
+  padding: 40px 50px 50px;
+  margin: 67px auto;
+  background: #fff;
+}
+section div.w-1190 div.register-main > ul {
+  width: 100%;
+}
+section div.w-1190 div.register-main > ul li {
+  width: 50%;
+  float: left;
+  text-align: center;
+  height: 35px;
+  color: #333;
+  border-bottom: 1px solid #EEE;
+  font-size: 16px;
+  transition: all 200ms linear;
+}
+section div.w-1190 div.register-main > ul li.hover {
+  color: #ff9911;
+  text-decoration: underline;
+  cursor: pointer;
+}
+section div.w-1190 div.register-main > ul li.active {
+  color: #FF9911;
+  border-bottom: 2px solid #FF9911;
+}
+section div.w-1190 div.register-main div.style div > p.choose {
+  float: left;
+  cursor: pointer;
+  margin: 15px 50px 0 0;
+  padding-top: 1px;
+}
+section div.w-1190 div.register-main div.style div > p.choose b {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-position: -98px -159px;
+  vertical-align: middle;
+  margin: 0 2px 1px 0;
+}
+section div.w-1190 div.register-main div.style div > p.choose b.active {
+  background-position: -114px -174px;
+}
+section div.w-1190 div.register-main div.style #Code {
+  display: none;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber {
+  position: relative;
+  width: 100%;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div > p.input {
+  position: relative;
+  margin: 15px 0 20px;
+  height: 40px;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div > p.input input.number {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding-left: 7px;
+  z-index: 3;
+  outline: none;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  color: #666;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div > p.input > b {
+  display: none;
+  font-weight: normal;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  color: red;
+  line-height: 13px;
+  font-size: 14px;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div > p.input > b i {
+  background-position: -640px -340px;
+  width: 13px;
+  height: 13px;
+  vertical-align: middle;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div > p.input > b span {
+  vertical-align: middle;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div > p.input input.active {
+  border-bottom: 1px solid #ff9911;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div > p.input button {
+  width: 114px;
+  height: 44px;
+  background: #f5f5f5;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  outline: none;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-size: 12px;
+  color: #999;
+  z-index: 100;
+  cursor: pointer;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div > p.input .send {
+  cursor: pointer;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div > p.input > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 380px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: text;
+  color: #ddd;
+  padding-left: 7px;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber p.check .remember {
+  vertical-align: middle;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber p.check label {
+  position: relative;
+  top: 1px;
+  color: #999;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber p.check label a {
+  color: #666;
+  transition: all 200ms linear;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber p.check label a:hover {
+  color: #ff9911;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber p.check > a {
+  float: right;
+  text-decoration: none;
+  color: #666;
+  position: relative;
+  top: 1px;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber button.btn-register {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background: #ccc;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  transition: all 100ms linear;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber button.active {
+  background: #FF9911;
+  cursor: pointer;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber p.wechar-register {
+  color: #666;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber p.wechar-register i {
+  background-position: -614px -340px;
+  width: 22px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div.motal {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  background: white;
+  z-index: 10;
+  transition: all 300ms linear;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div.motal i {
+  width: 15px;
+  height: 15px;
+  background-position: -475px -419px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  opacity: 0;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div.motal b {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/qrcode.jpg) no-repeat;
+  display: none;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div.active {
+  width: 500px;
+  height: 416px;
+  bottom: -50px;
+  left: -50px;
+  background: rgba(0, 0, 0, 0.7);
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div.active b {
+  width: 303px;
+  height: 303px;
+  display: block;
+  top: 56%;
+  left: 54%;
+  margin-left: -151px;
+  margin-top: -151px;
+}
+section div.w-1190 div.register-main div.style div.phoneNumber div.active i {
+  display: block;
+  opacity: 1;
+}
+section div.w-1190 div.register-main div.enroll {
+  display: none;
+}
+section div.w-1190 div.register-main div.enroll div.phoneNumber {
+  margin-top: 50px;
+}
+section div.w-1190 div.register-main div.enroll div.phoneNumber p.check {
+  margin-top: 10px;
+}
+section div.w-1190 div.register-main div.enroll div.phoneNumber p.inputCode {
+  display: block !important;
+}
+section div.w-1190 div.register-main div.enroll div.phoneNumber p.inputCode button {
+  color: #666;
+}
+section div.w-1190 div.register-main div.enroll div.phoneNumber p.inputPwd > i {
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  top: 14px;
+  right: 3px;
+  background-position: -614px -383px;
+  z-index: 4;
+  cursor: pointer;
+}
+section div.w-1190 div.register-main div.enroll div.phoneNumber p.inputPwd > i.show {
+  height: 10px;
+  top: 16px;
+  background-position: -614px -370px;
+}
+section div.w-1190 h2 {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  font-size: 14px;
+}

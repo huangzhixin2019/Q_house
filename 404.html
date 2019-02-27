@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background:#F8F8F8;
+        }
+        div{
+            position:absolute;
+            left:50%;
+            top:50%;
+            margin:-180px 0 0 -405px;
+        }
+        a{
+            position:absolute;
+            color:#2e2e2e;
+            text-decoration:none;
+            transition:all 200ms linear;
+        }
+        a:hover{
+            color:#ff9911;
+        }
+        #index{
+            bottom:25px;
+            right:52%;
+        }
+        #last{
+            bottom:25px;
+            right:29%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img/error-404.jpg" alt="error-404.jpg"/>
+        <a href="index.html" id="index">首页</a>
+        <a href="#" id="last">返回上一层</a>
+    </div>
+    <script>
+        var last=document.getElementById('last');
+        last.onclick=function(e){
+            e.preventDefault()
+            history.go(-1);
+        }
+    </script>
+</body>
+</html>

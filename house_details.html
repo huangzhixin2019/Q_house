@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/house_details.css"/>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=vjTVnpVpMrxZm90zSkWyDCpnttM6UFN9"></script>
+</head>
+<body>
+<header>
+  <div class="header-top">
+    <div class="header-top-main w-1190">
+      <div class="header-top-main-left">
+        <div class="logo">
+          <a href="index.html" class="icon"></a>
+          <div class="location">
+            <a href="#">深圳</a>
+            <span>[切换]</span>
+          </div>
+          <div id="location-main">
+            <p>选择城市</p>
+            <ul>
+              <li>
+                <i>B</i>
+                <a href="#" class="orange">北京</a>
+                <a href="#">宝山</a>
+              </li>
+              <li>
+                <i>N</i>
+                <a href="#" class="orange">南京</a>
+                <a href="#">南宁</a>
+                <a href="#">南通</a>
+              </li>
+              <li>
+                <i>C</i>
+                <a href="#">成都</a>
+                <a href="#">重庆</a>
+                <a href="#">长沙</a>
+              </li>
+              <li>
+                <i>P</i>
+                <a href="#">平顶山</a>
+              </li>
+              <li>
+                <i>D</i>
+                <a href="#">东莞</a>
+              </li>
+              <li>
+                <i>Q</i>
+                <a href="#" class="orange">青岛</a>
+              </li>
+              <li>
+                <i>F</i>
+                <a href="#" class="orange">佛山</a>
+              </li>
+              <li>
+                <i>S</i>
+                <a href="#" class="orange">深圳</a>
+                <a href="#" class="orange">上海</a>
+                <a href="#" class="orange">苏州</a>
+                <a href="#">三亚</a>
+              </li>
+              <li>
+                <i>G</i>
+                <a href="#" class="orange">广州</a>
+                <a href="#">赣州</a>
+              </li>
+              <li>
+                <i>T</i>
+                <a href="#">太原</a>
+                <a href="#">太仓</a>
+              </li>
+              <li>
+                <i>H</i>
+                <a href="#" class="orange">杭州</a>
+                <a href="#">惠州</a>
+                <a href="#">红河</a>
+                <a href="#">合肥</a>
+                <a href="#">湖州</a>
+              </li>
+              <li>
+                <i>W</i>
+                <a href="#">武汉</a>
+                <a href="#">无锡</a>
+              </li>
+              <li>
+                <i>J</i>
+                <a href="#">嘉兴</a>
+              </li>
+              <li>
+                <i>X</i>
+                <a href="#" class="orange">香港</a>
+              </li>
+              <li>
+                <i>K</i>
+                <a href="#">昆明</a>
+              </li>
+              <li>
+                <i>Z</i>
+                <a href="#" class="orange">珠海</a>
+                <a href="#" class="orange">中山</a>
+                <a href="#">淄博</a>
+              </li>
+              <li>
+                <i>L</i>
+                <a href="#" class="orange">廊坊</a>
+              </li>
+            </ul>
+            <b class="icon"></b>
+            <span id="location-main-closed" class="icon"></span>
+          </div>
+        </div>
+      </div>
+      <div class="header-top-main-right">
+        <ul class="nav">
+          <li><a href="index.html">首页</a></li>
+          <li>
+            <a href="secondHand_house.html" class="white">二手房</a>
+            <div class="nav-down">
+              <p>
+                <a href="#">房源</a>
+                <a href="#">小区</a>
+                <a href="#">学区房</a>
+                <a href="#">经纪人</a>
+                <a href="#">地图找房</a>
+              </p>
+              <i class="icon f2"></i>
+            </div>
+          </li>
+          <li>
+            <a href="new-house.html">新房</a>
+            <div class="nav-down">
+              <p>
+                <a href="#">新房首页</a>
+                <a href="#">优惠活动</a>
+                <a href="#">深圳新房</a>
+                <a href="#">楼盘导购</a>
+                <a href="#">Q客云购</a>
+              </p>
+              <i class="icon f2"></i>
+            </div>
+          </li>
+          <li>
+            <a href="#">租房</a>
+            <div class="nav-down">
+              <p>
+                <a href="#">房源</a>
+                <a href="#">小区</a>
+                <a href="#">经纪人</a>
+                <a href="#">找图找房</a>
+              </p>
+              <i class="icon f2"></i>
+            </div>
+          </li>
+          <li><a href="#">查房价</a></li>
+          <li>
+            <a href="#">写字楼</a>
+            <div class="nav-down">
+              <p>
+                <a href="#">写字楼首页</a>
+                <a href="#">写字楼出租</a>
+                <a href="#">写字楼出售</a>
+                <a href="#">写字楼楼盘</a>
+                <a href="#">写字楼经纪人</a>
+              </p>
+              <i class="icon f2"></i>
+            </div>
+          </li>
+          <li><a href="#">海外</a></li>
+          <li><a href="#">业主委托</a></li>
+          <li>
+            <a href="#">掌上Q房</a>
+            <div class="nav-down">
+              <p>
+                <a href="#" class="icon qrcode">
+                </a>
+              </p>
+              <i class="icon f2"></i>
+            </div>
+          </li>
+        </ul>
+        <ul class="register">
+          <li>
+            <i class="icon"></i>
+            <a href="register.html">
+              <span>登录</span>
+            </a>
+            <div class="nav-down">
+              <p>
+                <a href="#">
+                  我的Q房
+                </a>
+                <a href="#" id="exit">退出登录</a>
+              </p>
+              <i class="icon f2"></i>
+            </div>
+          </li>
+          <li>丨</li>
+          <li>
+            <a href="register.html">
+              <span>注册</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<section>
+  <!--//面包屑导航-->
+  <div class="w-1190">
+    <div class="crumbs-links">
+      <a href="index.html">深圳Q房网</a>
+      <i class="icon"></i>
+      <a href="secondHand_house.html">深圳二手房</a>
+      <i class="icon"></i>
+      <div class="crubms-drop">
+        <a href="#">福田二手房</a>
+        <b class="icon"></b>
+        <div class="drop-down">
+          <b class="icon"></b>
+          <ul class="clear">
+            <li>
+              <i>B</i>
+              <a href="#">宝安二手房</a>
+            </li>
+            <li>
+              <i>D</i>
+              <a href="#">大鹏新区二手房</a>
+            </li>
+            <li>
+              <i>F</i>
+              <a href="#">福田二手房</a>
+            </li>
+            <li>
+              <i>G</i>
+              <a href="#">光明新区二手房</a>
+            </li>
+            <li>
+              <i>L</i>
+              <a href="#">罗湖二手房</a>
+              <a href="#">龙岗二手房</a>
+              <a href="#">龙华新区二手房</a>
+            </li>
+            <li>
+              <i>N</i>
+              <a href="#">南山二手房</a>
+            </li>
+            <li>
+              <i>P</i>
+              <a href="#">坪山新区二手房</a>
+            </li>
+            <li>
+              <i>Y</i>
+              <a href="#">盐田二手房</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <i class="icon"></i>
+      <div class="crubms-drop">
+        <a href="#">景田二手房</a>
+        <b class="icon"></b>
+        <div class="drop-down">
+          <b class="icon"></b>
+          <ul class="clear">
+            <li>
+              <i>B</i>
+              <a href="#">宝安二手房</a>
+            </li>
+            <li>
+              <i>D</i>
+              <a href="#">大鹏新区二手房</a>
+            </li>
+            <li>
+              <i>F</i>
+              <a href="#">福田二手房</a>
+            </li>
+            <li>
+              <i>G</i>
+              <a href="#">光明新区二手房</a>
+            </li>
+            <li>
+              <i>L</i>
+              <a href="#">罗湖二手房</a>
+              <a href="#">龙岗二手房</a>
+              <a href="#">龙华新区二手房</a>
+            </li>
+            <li>
+              <i>N</i>
+              <a href="#">南山二手房</a>
+            </li>
+            <li>
+              <i>P</i>
+              <a href="#">坪山新区二手房</a>
+            </li>
+            <li>
+              <i>Y</i>
+              <a href="#">盐田二手房</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <i class="icon"></i>
+      <span>宏浩花园二手房</span>
+    </div>
+    <h1>宏浩花园 温馨大社区 豪华装修大四房 低价诚心出售 看房方便</h1>
+    <div class="collect">
+      <a href="#">
+        <i class="icon"></i>
+        <span>收藏房源</span>
+      </a>
+      <a href="#">
+        <span>预约看房</span>
+      </a>
+    </div>
+  </div>
+  <div class="house-photo">
+    <div class="w-1190">
+      <div class="photo-left">
+        <div class="toggleBig">
+          <i class="prev"></i>
+          <img src="img/details/big01.jpg" >
+          <i class="next"></i>
+        </div>
+        <div class="photo-choose">
+          <i class="prev"></i>
+          <div class="photo-toggle">
+            <ul class="clear">
+              <li class="active">
+                <img src="img/details/small01.jpg" alt="small01.jpg" data-src="img/details/big01.jpg"/>
+              </li>
+              <li>
+                <img src="img/details/small02.jpg" alt="small02.jpg" data-src="img/details/big02.jpg"/>
+              </li>
+              <li>
+                <img src="img/details/small03.jpg" alt="small03.jpg" data-src="img/details/big03.jpg"/>
+              </li>
+              <li>
+                <img src="img/details/small04.jpg" alt="small04.jpg" data-src="img/details/big04.jpg"/>
+              </li>
+              <li>
+                <img src="img/details/small05.jpg" alt="small05.jpg" data-src="img/details/big05.jpg"/>
+              </li>
+              <li>
+                <img src="img/details/small06.jpg" alt="small06.jpg" data-src="img/details/big06.jpg"/>
+              </li>
+            </ul>
+          </div>
+          <i class="next active"></i>
+        </div>
+      </div>
+      <div class="photo-right">
+        <div class="first-floor">
+          <span>
+            <b>1350</b>万
+          </span>
+          <div>
+            <p><span>72581元/平米</span>  <i class="icon"></i></p>
+            <p>首付 405.00万 月供 50153.68元</p>
+          </div>
+        </div>
+        <div class="second">
+          <div>
+            <span>小区名称</span>
+            <p><a href="#">宏浩花园</a></p>
+          </div>
+          <div>
+            <span>看房时间</span>
+            <p>随时可预约<a href="#" class="line">随时看房</a></p>
+          </div>
+          <div>
+            <span>小区名称</span>
+            <p><a href="#">深圳市福田区景秀小学</a></p>
+          </div>
+          <div>
+            <span>小区名称</span>
+            <p>
+              [<a href="#">福田</a>
+              <a href="#">景田</a>]
+              <a href="#">香梅路与莲花路交汇处</a>
+              <i class="icon"></i>
+            </p>
+          </div>
+        </div>
+        <div class="third clear">
+          <ul>
+            <li>
+              <h1>1室1厅</h1>
+              <p>高层 /25层</p>
+            </li>
+            <li>
+              <h1>186平米</h1>
+              <p>建筑面积</p>
+            </li>
+            <li>
+              <h1>朝南</h1>
+              <p>1998年建</p>
+            </li>
+          </ul>
+        </div>
+        <div class="forth clear">
+          <a href="#"></a>
+          <div class="forth-right">
+            <p>
+              <span>李敏</span>
+               Q房网 &nbsp;&nbsp;&nbsp;特区报二分店
+            </p>
+            <p>
+              该房源动态由我更新，实时了解编号
+            </p>
+            <b>132 4676 3344</b>
+          </div>
+        </div>
+        <div class="fifth">
+            <i class="icon"></i>
+            <span>真实房源线上浏览线下体验</span>
+            <em>房源编号： 169870491196</em>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main w-1190">
+    <div class="opinion w-714 clear">
+      <h1 id="opinion-main">房源点评</h1>
+      <div class="opinion-main" >
+        <div>
+          <span>房源标签</span>
+          <p>
+            <b>距离2号线(蛇口线)香梅北站约404米</b>
+          </p>
+        </div>
+        <div>
+          <span>推荐理由</span>
+          <p>
+            <em>大社区。交通、生活配套好</em>
+          </p>
+        </div>
+        <div>
+          <span>户型描述</span>
+          <p>
+            <em>户型方正通透、采光效果及佳好</em>
+          </p>
+        </div>
+        <div>
+          <span>装修情况</span>
+          <p>
+            <em>2014年重新装修 ，精致温馨</em>
+          </p>
+        </div>
+        <div>
+          <span>售房原因</span>
+          <p>
+            <em>业主换房急用钱 所以出售此房源</em>
+          </p>
+        </div>
+        <a href="#" class="check">查看更多房评</a>
+      </div>
+      <h1 id="house-photo">房源图片</h1>
+      <ul class="clear house-photo" >
+        <li>
+          <a href="#">
+            <img src="img/details/big01.jpg"/>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/details/big02.jpg"/>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/details/big03.jpg"/>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/details/big04.jpg"/>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="check">查看更多图片</a>
+      <h1 id="school">对口学校</h1>
+      <div class="school" >
+        <div class="clear">
+          <a href="#">深圳市福田区景秀小学</a>
+          <div class="school-left">
+            <p>
+              <em>所属性质</em>
+              <span>公办学校</span>
+            </p>
+            <p>
+              <em>学校类别</em>
+              <span>小学</span>
+            </p>
+            <p>
+              <em>学校地址</em>
+              <span>景田北一街28</span>
+            </p>
+          </div>
+          <div class="school-right">
+            <p>
+              <a href="#">22</a>个
+              <em>对口小区</em>
+            </p>
+            <p>
+              <a href="#">65</a>套
+              <em>二手房房源</em>
+            </p>
+          </div>
+        </div>
+        <div class="clear">
+          <a href="#">深圳市福田区景秀小学</a>
+          <div class="school-left">
+            <p>
+              <em>所属性质</em>
+              <span>公办学校</span>
+            </p>
+            <p>
+              <em>学校类别</em>
+              <span>小学</span>
+            </p>
+            <p>
+              <em>学校地址</em>
+              <span>景田北一街28</span>
+            </p>
+          </div>
+          <div class="school-right">
+            <p>
+              <a href="#">41</a>个
+              <em>对口小区</em>
+            </p>
+            <p>
+              <a href="#">104</a>套
+              <em>二手房房源</em>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="ambitus" id="ambitus">
+        <div class="ambitus-header">
+          <a href=".map" class="active">周边配套</a>
+          <a href=".toggleVR">全景地图</a>
+        </div>
+        <div class="ambitus-choose">
+          <a href="#" class="active">交通</a>
+          <a href="#">学校</a>
+          <a href="#">医疗</a>
+          <a href="#">超市</a>
+          <a href="#">生活</a>
+          <a href="#">其他</a>
+        </div>
+        <div class="map clear a active">
+          <div class="map-main">
+            <div class="map-school">
+              <div id="allmap"></div>
+              <p>返回北京市地图上圆形覆盖范围内的“餐馆”检索结果，并展示在地图上</p>
+              <div id="l-map"></div>
+              <div id="r-result"></div>
+            </div>
+          </div>
+          <div class="map-detail">
+            <p>地铁口</p>
+            <div class="metro">
+              <ul>
+                <li class="clear">
+                  <a href="#" class="clear">
+                    <i>1</i>
+                    <div>
+                      <b>香梅北</b>
+                      <em>蛇口线</em>
+                    </div>
+                    <span>
+                      403米
+                    </span>
+                  </a>
+                </li>
+                <li class="clear">
+                  <a href="#">
+                    <i>2</i>
+                    <div>
+                      <b>景田</b>
+                      <em>蛇口线</em>
+                    </div>
+                    <span>
+                      403米
+                    </span>
+                  </a>
+                </li>
+                <li class="clear">
+                  <a href="#">
+                    <i>3</i>
+                    <div>
+                      <b>香梅</b>
+                      <em>蛇口线</em>
+                    </div>
+                    <span>
+                      403米
+                    </span>
+                  </a>
+                </li>
+                <li class="clear">
+                  <a href="#" class="clear">
+                    <i>4</i>
+                    <div>
+                      <b>美景</b>
+                      <em>蛇口线</em>
+                    </div>
+                    <span>
+                      403米
+                    </span>
+                  </a>
+                </li>
+                <li class="clear">
+                  <a href="#">
+                    <i>5</i>
+                    <div>
+                      <b>龙华</b>
+                      <em>蛇口线</em>
+                    </div>
+                    <span>
+                      403米
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p>公交站</p>
+            <div class="bus">
+              <ul>
+                <li class="clear">
+                  <a href="#" class="clear">
+                    <i>1</i>
+                    <div>
+                      <b>香梅北</b>
+                      <em>蛇口线</em>
+                    </div>
+                    <span>
+                      403米
+                    </span>
+                  </a>
+                </li>
+                <li class="clear">
+                  <a href="#">
+                    <i>2</i>
+                    <div>
+                      <b>景田</b>
+                      <em>蛇口线</em>
+                    </div>
+                    <span>
+                      403米
+                    </span>
+                  </a>
+                </li>
+                <li class="clear">
+                  <a href="#">
+                    <i>3</i>
+                    <div>
+                      <b>香梅</b>
+                      <em>蛇口线</em>
+                    </div>
+                    <span>
+                      403米
+                    </span>
+                  </a>
+                </li>
+                <li class="clear">
+                  <a href="#" class="clear">
+                    <i>4</i>
+                    <div>
+                      <b>美景</b>
+                      <em>蛇口线</em>
+                    </div>
+                    <span>
+                      403米
+                    </span>
+                  </a>
+                </li>
+                <li class="clear">
+                  <a href="#">
+                    <i>5</i>
+                    <div>
+                      <b>龙华</b>
+                      <em>蛇口线</em>
+                    </div>
+                    <span>
+                      403米
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="toggleVR a">
+          <div id="panorama"></div>
+          <div id="result"></div>
+        </div>
+      </div>
+      <div class="calculator" id="calculator">
+        <div class="calculator-header ">
+          <a href=".Mortgage" class="active">房贷计算器</a>
+          <a href=".Taxation">税费计算器</a>
+        </div>
+        <div class="calculator-main clear Mortgage active">
+          <div class="calculator-main-left clear">
+            <ul>
+            <li>
+              <span>贷款类别:</span>
+              <div>
+                <span>公积金贷款</span>
+                <i class="icon"></i>
+                <ul class="toggleDown">
+                  <li>
+                    <p>商业贷款</p>
+                  </li>
+                  <li>
+                    <p>公积金贷款</p>
+                  </li>
+                  <li>
+                    <p>组合贷款</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>贷款年限:</span>
+              <div>
+                <span>30年</span>
+                <i class="icon"></i>
+                <ul class="toggleDown">
+                  <li>
+                    <p>5年</p>
+                  </li>
+                  <li>
+                    <p>10年</p>
+                  </li>
+                  <li>
+                    <p>15年</p>
+                  </li>
+                  <li>
+                    <p>20年</p>
+                  </li>
+                  <li>
+                    <p>25年</p>
+                  </li>
+                  <li>
+                    <p>30年</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>房屋总价:</span>
+              <div>
+                <input type="text" value="275"/>万
+              </div>
+            </li>
+            <li>
+              <span>贷款成数:</span>
+              <div>
+                <span>7成</span>
+                <i class="icon"></i>
+                <ul class="toggleDown">
+                  <li>
+                    <p>2成</p>
+                  </li>
+                  <li>
+                    <p>3成</p>
+                  </li>
+                  <li>
+                    <p>4成</p>
+                  </li>
+                  <li>
+                    <p>5成</p>
+                  </li>
+                  <li>
+                    <p>6成</p>
+                  </li>
+                  <li>
+                    <p>7成</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>公贷利率:</span>
+              <div class="contain">
+                <span>最新公积金贷款利率</span>
+                <i class="icon"></i>
+                <ul class="toggleDown">
+                  <li>
+                    <p>最新基准利率7折</p>
+                  </li>
+                  <li>
+                    <p>最新基准利率75折</p>
+                  </li>
+                  <li>
+                    <p>最新基准利率8折</p>
+                  </li>
+                  <li>
+                    <p>最新基准利率85折</p>
+                  </li>
+                  <li>
+                    <p>最新基准利率9折</p>
+                  </li>
+                  <li>
+                    <p>最新基准利率95折</p>
+                  </li>
+                </ul>
+              </div>
+              <input type="text" value="325"/>%
+            </li>
+          </ul>
+          <button class="btn">
+            立即计算
+          </button>
+          </div>
+          <div class="calculator-main-right">
+            <p>
+              <a href="#" class="active">
+                <span>等额本息还款</span>
+                <b class="icon"></b>
+              </a>
+              <a href="#">
+                <span>等额本金还款</span>
+                <b class="icon"></b>
+              </a>
+            </p>
+            <div class="Principal">
+              <div>
+                <span>首付</span>
+                <em>405.00万</em>
+              </div>
+              <div>
+                <span>贷款总额</span>
+                <em>945.00万</em>
+              </div>
+              <div>
+                <span>月供</span>
+                <em class="bold">50153.68元</em>
+              </div>
+              <div>
+                <span>总利息</span>
+                <em class="bold">860.53万</em>
+              </div>
+              <div>
+                <span class="bold">本息总额</span>
+                <em class="bold">1805.53</em>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calculator-main clear Taxation">
+        <div class="calculator-main-left clear">
+          <ul>
+            <li>
+              <span>住宅类型:</span>
+              <div>
+                <span>普通住宅</span>
+                <i class="icon"></i>
+                <ul class="toggleDown">
+                  <li>
+                    <p>普通住宅</p>
+                  </li>
+                  <li>
+                    <p>非普通住宅</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>卖方唯一:</span>
+              <div>
+                <span>唯一住宅</span>
+                <i class="icon"></i>
+                <ul class="toggleDown">
+                  <li>
+                    <p>唯一住宅</p>
+                  </li>
+                  <li>
+                    <p>非唯一住宅</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>距上次交易:</span>
+              <div>
+                <span>满2年</span>
+                <i class="icon"></i>
+                <ul class="toggleDown">
+                  <li>
+                    <p>满5年</p>
+                  </li>
+                  <li>
+                    <p>满2年</p>
+                  </li>
+                  <li>
+                    <p>不满2年</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>计征方式:</span>
+              <div>
+                <span>总价</span>
+                <i class="icon"></i>
+                <ul class="toggleDown">
+                  <li>
+                    <p>总价</p>
+                  </li>
+                  <li>
+                    <p>差价</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>买方家庭首套:</span>
+              <div>
+                <span>首套</span>
+                <i class="icon"></i>
+                <ul class="toggleDown">
+                  <li>
+                    <p>首套</p>
+                  </li>
+                  <li>
+                    <p>非首套</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>房屋面积:</span>
+              <div>
+                <input type="text" value="72.67"/>平
+              </div>
+            </li>
+            <li>
+              <span>房屋总价:</span>
+              <div>
+                <input type="text" value="275"/>万
+              </div>
+            </li>
+          </ul>
+          <button class="btn">
+            立即计算
+          </button>
+        </div>
+        <div class="calculator-main-right">
+          <p>
+            <a href="#" class="active">
+              <span>等额本息还款</span>
+              <b class="icon"></b>
+            </a>
+            <a href="#">
+              <span>等额本金还款</span>
+              <b class="icon"></b>
+            </a>
+          </p>
+          <div class="Principal">
+            <div>
+              <span>首付</span>
+              <em>405.00万</em>
+            </div>
+            <div>
+              <span>贷款总额</span>
+              <em>945.00万</em>
+            </div>
+            <div>
+              <span>月供</span>
+              <em class="bold">50153.68元</em>
+            </div>
+            <div>
+              <span>总利息</span>
+              <em class="bold">860.53万</em>
+            </div>
+            <div>
+              <span class="bold">本息总额</span>
+              <em class="bold">1805.53</em>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <h1 id='information'>小区信息</h1>
+      <div class="information clear" >
+        <div class="information-left">
+          <a href="#">
+            <img src="img/details/aacfc460-4025-4793-b70f-4b5e0ef50e14_001.jpg"/>
+          </a>
+          <div>
+            <p>
+              <b>宏浩花园</b>4套在售
+            </p>
+            <div>
+              <p>
+                <span>
+                  建筑年代
+                </span>
+                <em>1998年建</em>
+              </p>
+              <p>
+                <span>
+                  容积率
+                </span>
+                <em>2</em>
+              </p>
+              <p>
+                <span>
+                  绿化率
+                </span>
+                <em>50%</em>
+              </p>
+              <p>
+                <span>
+                  物业费
+                </span>
+                <em>3元/平米·月</em>
+              </p>
+              <p>
+                <span>
+                  地址
+                </span>
+                <em>
+                  <a href="#">
+                    香梅路与莲花路交汇处
+                  </a>
+                  <i class="icon"></i>
+                </em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>小区历史成交</h1>
+      <div class="history">
+        <ul>
+          <li class="captions clear">
+            <p class="first fl">成交日期</p>
+            <p class="second fl">成交价格</p>
+            <p class="third fl">成交单价</p>
+            <p class="fourth fl">户型</p>
+            <p class="fifth fl">建筑面积</p>
+            <p class="sixth fl">楼层</p>
+            <p class="seventh fl">服务经纪人</p>
+          </li>
+          <li class="contents clear">
+            <p class="first fl">201703</p>
+            <p class="second fl">1297万</p>
+            <p class="third fl">71282元/m²</p>
+            <p class="fourth fl">4室2厅</p>
+            <p class="fifth fl">182m²</p>
+            <p class="sixth fl">
+              低层
+              /27层</p>
+            <p class="seventh fl">
+              --
+            </p>
+          </li>
+          <li class="contents clear">
+            <p class="first fl">201611</p>
+            <p class="second fl">1721万</p>
+            <p class="third fl">80034元/m²</p>
+            <p class="fourth fl">4室2厅</p>
+            <p class="fifth fl">215m²</p>
+            <p class="sixth fl">
+              高层
+              /29层</p>
+            <p class="seventh fl">
+              --
+            </p>
+          </li>
+          <li class="contents clear">
+            <p class="first fl">201611</p>
+            <p class="second fl">1713万</p>
+            <p class="third fl">79674元/m²</p>
+            <p class="fourth fl">4室2厅</p>
+            <p class="fifth fl">215m²</p>
+            <p class="sixth fl">
+              中层
+              /29层</p>
+            <p class="seventh fl">
+              --
+            </p>
+          </li>
+          <li class="contents clear">
+            <p class="first fl">201608</p>
+            <p class="second fl">1226万</p>
+            <p class="third fl">67346元/m²</p>
+            <p class="fourth fl">4室2厅</p>
+            <p class="fifth fl">182m²</p>
+            <p class="sixth fl">
+              中层
+              /27层</p>
+            <p class="seventh fl">
+              --
+            </p>
+          </li>
+          <li class="contents clear">
+            <p class="first fl">201608</p>
+            <p class="second fl">1276万</p>
+            <p class="third fl">69371元/m²</p>
+            <p class="fourth fl">4室2厅</p>
+            <p class="fifth fl">184m²</p>
+            <p class="sixth fl">
+              高层
+              /25层</p>
+            <p class="seventh fl">
+              --
+            </p>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="check"><span>登录系统</span>,查看全部成交记录</a>
+    </div>
+    <div class="fixed-right clear">
+      <h2>推荐经纪人</h2>
+      <div>
+        <div>
+          <a href="#">
+          </a>
+          <p>
+            <a href="#">李敏</a>
+             Q房网 &nbsp; &nbsp;特区报二分店
+          </p>
+          <p>该房源动态由我更新，实时了解变化</p>
+          <b>132 4676 3344</b>
+        </div>
+        <p>
+          <a href="#">收藏房源</a>
+          <a href="#">预约看房</a>
+        </p>
+      </div>
+    </div>
+    <h1 id="housing-resources">附近房源</h1>
+    <div class="housing-resources " >
+      <ul class="clear">
+        <li>
+          <a href="#">
+            <img src="img/details/cvtcmvjolp2azrsxaa3umhlcdnc249.jpg" alt=""/>
+          </a>
+          <a href="#">万科金色家园二期高层复式 朝南看花园 装修保养好</a>
+          <p>
+            <span>4室2厅</span>
+            <span>176m²</span>
+            <em>
+              <b>1460</b>万
+            </em>
+          </p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/details/cvtcnfgfib2apdkwaadudd1hpba375.jpg" alt=""/>
+          </a>
+          <a href="#">万科金色家园二期高层复式 朝南看花园 装修保养好</a>
+          <p>
+            <span>4室2厅</span>
+            <span>176m²</span>
+            <em>
+              <b>1460</b>万
+            </em>
+          </p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/details/cvtcnfjzkcyapfffaayyrzirepu921.jpg" alt=""/>
+          </a>
+          <a href="#">万科金色家园二期高层复式 朝南看花园 装修保养好</a>
+          <p>
+            <span>4室2厅</span>
+            <span>176m²</span>
+            <em>
+              <b>1460</b>万
+            </em>
+          </p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/details/cvtcm1gwqxaafa6saaigtog9e3w168.jpg" alt=""/>
+          </a>
+          <a href="#">万科金色家园二期高层复式 朝南看花园 装修保养好</a>
+          <p>
+            <span>4室2厅</span>
+            <span>176m²</span>
+            <em>
+              <b>1460</b>万
+            </em>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <h1>本小区同类房</h1>
+    <div class="housing-resources">
+      <ul class="clear">
+        <li>
+          <a href="#">
+            <img src="img/details/cvtcmvjduueafcbiaau_yqdqwck151.jpg" alt=""/>
+          </a>
+          <a href="#">
+            宏浩花园大平层，南北通透，业主诚售！</a>
+          <p>
+            <span>4室2厅</span>
+            <span>176m²</span>
+            <em>
+              <b>1460</b>万
+            </em>
+          </p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/details/cvtcmfgsqniavptqaadudgwxmbq358.jpg" alt=""/>
+          </a>
+          <a href="#">顶楼复式，全新精装，景观好背山看湖</a>
+          <p>
+            <span>4室2厅</span>
+            <span>176m²</span>
+            <em>
+              <b>1460</b>万
+            </em>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <h1>新盘推荐</h1>
+    <div class="housing-resources newHouse" >
+      <ul class="clear">
+        <li>
+          <a href="#">
+            <img src="img/details/cvtckli44xcavgwuaael0adllhm268.jpg" alt=""/>
+          </a>
+          <a href="#">
+            英郡年华花园</a>
+          <div>报名可享优惠</div>
+          <p>
+            <span>均价:</span>
+            <b>45000</b>元/m²
+          </p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/details/cvtcklh2dksabvwsaahmo0sxnae566.jpg" alt=""/>
+          </a>
+          <a href="#">
+            远洋新干线</a>
+          <div>报名可享优惠</div>
+          <p>
+            <span>均价:</span>
+            <b>45000</b>元/m²
+          </p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/details/cvtcklc9ykcaes0baae1hrjytk8223.jpg" alt=""/>
+          </a>
+          <a href="#">
+            吉祥里豪庭,铭德大厦</a>
+          <div>报名可享优惠</div>
+          <p>
+            <span>均价:</span>
+            <b>45000</b>元/m²
+          </p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/details/cvtckvehoxcaepuraafg-5zqtqw420.jpg" alt=""/>
+          </a>
+          <a href="#">
+            星河智荟花园</a>
+          <div>报名可享优惠</div>
+          <p>
+            <span>均价:</span>
+            <b>45000</b>元/m²
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="quickAction">
+      <ul class="clear">
+        <li class="active">
+          <a href="#opinion-main" data-href=".opinion-main">房源信息介绍</a>
+        </li>
+        <li>
+          <a href="#house-photo" data-href="ul.house-photo">房源图片</a>
+        </li>
+        <li>
+          <a href="#school" data-href=".school">对口图片</a>
+        </li>
+        <li>
+          <a href="#ambitus" data-href=".ambitus-choose">周边配套</a>
+        </li>
+        <li>
+          <a href="#calculator" data-href=".calculator-main">房贷查询</a>
+        </li>
+        <li>
+          <a href="#information" data-href=".information">小区信息</a>
+        </li>
+        <li>
+          <a href="#housing-resources" data-href=".housing-resources">房源推荐</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!--footer-->
+<footer>
+  <div class="footer-top">
+  </div>
+  <div class="footer-main">
+    <div class="foot-inner w-1190">
+      <div class="connect">
+        <div class="connect-right">
+          <i class="icon"></i>
+          服务热线:4009-000-999
+        </div>
+        <p>
+          <a href="#">关于Q房</a>
+          <a href="#">联系我们</a>
+          <a href="#">人才招聘</a>
+          <a href="#">用户协议</a>
+          <a href="#">友情链接</a>
+          <a href="#">房产百科</a>
+          <a href="#">房产问答</a>
+        </p>
+      </div>
+      <div class="friendLink clearfix">
+        <ul class="clear">
+          <li>
+            <a href="#d1" class="active">深圳二手房小区房价</a>
+          </li>
+          <li>
+            <a href="#d2">深圳二手房推荐</a>
+          </li>
+          <li>
+            <a href="#d3">深圳租房推荐</a>
+          </li>
+          <li>
+            <a href="#d4">热门城市新房价格</a>
+          </li>
+          <li>
+            <a href="#d5">热门城市新房网</a>
+          </li>
+          <li>
+            <a href="#d6">友情链接</a>
+          </li>
+        </ul>
+        <div id="d1" class="links-main active clear clearfix">
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://zhuhai.qfang.com/" title="珠海房产网" target="_top">珠海房产网</a></p>
+          <p><a href="http://www.517.cn/" title="沈阳二手房 " target="_top">沈阳二手房 </a></p>
+          <p><a href="http://www.guojj.com/" title="深圳装修" target="_top">深圳装修</a></p>
+          <p><a href="http://www.whjzw.net/" title="装修效果图" target="_top">装修效果图</a></p>
+          <p><a href="http://houseshangdu.com/" title="郑州房产网" target="_top">郑州房产网</a></p>
+          <p><a href="http://www.0731fdc.com/" title="长沙房产网" target="_top">长沙房产网</a></p>
+          <p><a href="http://sz.leju.com/" title="深圳新浪乐居" target="_top">深圳新浪乐居</a></p>
+          <p><a href="http://www.tobosu.com/" title="深圳装修网" target="_top">深圳装修网</a></p>
+          <p><a href="http://www.szhk.com/" title="深港在线" target="_top">深港在线</a></p>
+          <p><a href="http://www.596fc.com/" title="漳州房产网" target="_top">漳州房产网</a></p>
+          <p><a href="http://house.qq.com/" title="腾讯房产北京" target="_top">腾讯房产北京</a></p>
+          <p><a href="http://www.jiuzheng.com/" title="装修" target="_top">装修</a></p>
+          <p><a href="http://hetongfa.yjbys.com/" title="装修合同" target="_top">装修合同</a></p>
+          <p><a href="http://www.bzw315.com/" title="装修网	" target="_top">装修网	</a></p>
+          <p><a href="http://www.haogongzhang.com/" title="装修网" target="_top">装修网</a></p>
+          <p><a href="http://www.whjzw.net/" title="武汉装修网" target="_top">武汉装修网</a></p>
+          <p><a href="http://www.juwai.com/" title="海外房产网" target="_top">海外房产网</a></p>
+          <p><a href="http://www.zhuozhoufangchan.com/" title="涿州房产网" target="_top">涿州房产网</a></p>
+          <p><a href="http://www.shenchuang.com/" title="深圳之窗" target="_top">深圳之窗</a></p>
+          <p><a href="http://shenzhen.8684.cn/" title="深圳公交查询" target="_top">深圳公交查询</a></p>
+          <p><a href="http://shenzhen.tianqi.com/" title="深圳天气" target="_top">深圳天气</a></p>
+          <p><a href="http://shenzhen.anjuke.com/" title="深圳房产" target="_top">深圳房产</a></p>
+          <p><a href="http://www.0755rc.com/" title="深圳招聘网" target="_top">深圳招聘网</a></p>
+          <p><a href="http://www.muniao.com/" title="日租公寓" target="_top">日租公寓</a></p>
+          <p><a href="http://www.5khouse.com/" title="昆山房产网" target="_top">昆山房产网</a></p>
+          <p><a href="http://hangzhou.fangtoo.com/" title="杭州房产网" target="_top">杭州房产网</a></p>
+          <p><a href="http://www.0772fang.com/" title="柳州房产网" target="_top">柳州房产网</a></p>
+          <p><a href="http://www.0572home.com/" title="德清房产网" target="_top">德清房产网</a></p>
+          <p><a href="http://baike.qfang.com/shuyu/" title="房产术语" target="_top">房产术语</a></p>
+          <p><a href="http://baike.qfang.com/renwu/" title="房地产人物" target="_top">房地产人物</a></p>
+          <p><a href="http://www.51gaifang.com/" title="房屋设计图" target="_top">房屋设计图</a></p>
+          <p><a href="http://esf.xmhouse.com/" title="厦门二手房" target="_top">厦门二手房</a></p>
+          <p><a href="http://xm.focus.cn/" title="厦门房产" target="_top">厦门房产</a></p>
+          <p><a href="http://yipu.com.cn/" title="商业地产" target="_top">商业地产</a></p>
+          <p><a href="http://www.lsfc.net.cn/" title="嘉州房产网" target="_top">嘉州房产网</a></p>
+          <p><a href="http://www.tuliu.com/" title="土地流转" target="_top">土地流转</a></p>
+          <p><a href="http://www.to8to.com/" title="土巴兔装修网" target="_top">土巴兔装修网</a></p>
+          <p><a href="http://www.yihaojiaju.com/" title="家居装修" target="_top">家居装修</a></p>
+          <p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房" target="_top">深圳二手房</a></p>
+          <p><a href="http://www.jiancai365.cn/" title="365建材网" target="_top">365建材网</a></p>
+          <p><a href="http://www.xdt.cn/" title="万通融资" target="_top">万通融资</a></p>
+          <p><a href="http://www.grfyw.com/" title="个人房源网" target="_top">个人房源网</a></p>
+          <p><a href="http://www.zzjjw.cn/" title="九江房价" target="_top">九江房价</a></p>
+          <p><a href="http://bj.jiwu.com/" title="北京买房网" target="_top">北京买房网</a></p>
+          <p><a href="http://bj.lianjia.com/" title="北京房产网" target="_top">北京房产网</a></p>
+          <p><a href="http://nn.loupan.com/" title="南宁楼盘网" target="_top">南宁楼盘网</a></p>
+          <p><a href="http://www.99cfw.com/" title="厂房出租网" target="_top">厂房出租网</a></p>
+        </div>
+        <div id="d2" class="links-main clear">
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://zhuhai.qfang.com/" title="珠海房产网" target="_top">珠海房产网</a></p>
+          <p><a href="http://www.517.cn/" title="沈阳二手房 " target="_top">沈阳二手房 </a></p>
+          <p><a href="http://www.guojj.com/" title="深圳装修" target="_top">深圳装修</a></p>
+          <p><a href="http://www.whjzw.net/" title="装修效果图" target="_top">装修效果图</a></p>
+          <p><a href="http://houseshangdu.com/" title="郑州房产网" target="_top">郑州房产网</a></p>
+          <p><a href="http://www.jiuzheng.com/" title="装修" target="_top">装修</a></p>
+          <p><a href="http://hetongfa.yjbys.com/" title="装修合同" target="_top">装修合同</a></p>
+          <p><a href="http://www.bzw315.com/" title="装修网	" target="_top">装修网	</a></p>
+          <p><a href="http://www.haogongzhang.com/" title="装修网" target="_top">装修网</a></p>
+          <p><a href="http://www.whjzw.net/" title="武汉装修网" target="_top">武汉装修网</a></p>
+          <p><a href="http://www.juwai.com/" title="海外房产网" target="_top">海外房产网</a></p>
+          <p><a href="http://www.zhuozhoufangchan.com/" title="涿州房产网" target="_top">涿州房产网</a></p>
+          <p><a href="http://www.shenchuang.com/" title="深圳之窗" target="_top">深圳之窗</a></p>
+          <p><a href="http://shenzhen.8684.cn/" title="深圳公交查询" target="_top">深圳公交查询</a></p>
+          <p><a href="http://shenzhen.tianqi.com/" title="深圳天气" target="_top">深圳天气</a></p>
+          <p><a href="http://shenzhen.anjuke.com/" title="深圳房产" target="_top">深圳房产</a></p>
+          <p><a href="http://www.0755rc.com/" title="深圳招聘网" target="_top">深圳招聘网</a></p>
+          <p><a href="http://www.muniao.com/" title="日租公寓" target="_top">日租公寓</a></p>
+          <p><a href="http://www.5khouse.com/" title="昆山房产网" target="_top">昆山房产网</a></p>
+          <p><a href="http://hangzhou.fangtoo.com/" title="杭州房产网" target="_top">杭州房产网</a></p>
+          <p><a href="http://www.0772fang.com/" title="柳州房产网" target="_top">柳州房产网</a></p>
+          <p><a href="http://www.0572home.com/" title="德清房产网" target="_top">德清房产网</a></p>
+          <p><a href="http://baike.qfang.com/shuyu/" title="房产术语" target="_top">房产术语</a></p>
+          <p><a href="http://baike.qfang.com/renwu/" title="房地产人物" target="_top">房地产人物</a></p>
+          <p><a href="http://www.51gaifang.com/" title="房屋设计图" target="_top">房屋设计图</a></p>
+          <p><a href="http://esf.xmhouse.com/" title="厦门二手房" target="_top">厦门二手房</a></p>
+          <p><a href="http://xm.focus.cn/" title="厦门房产" target="_top">厦门房产</a></p>
+          <p><a href="http://yipu.com.cn/" title="商业地产" target="_top">商业地产</a></p>
+          <p><a href="http://www.lsfc.net.cn/" title="嘉州房产网" target="_top">嘉州房产网</a></p>
+          <p><a href="http://www.tuliu.com/" title="土地流转" target="_top">土地流转</a></p>
+          <p><a href="http://www.to8to.com/" title="土巴兔装修网" target="_top">土巴兔装修网</a></p>
+          <p><a href="http://www.yihaojiaju.com/" title="家居装修" target="_top">家居装修</a></p>
+          <p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房" target="_top">深圳二手房</a></p>
+          <p><a href="http://www.jiancai365.cn/" title="365建材网" target="_top">365建材网</a></p>
+          <p><a href="http://www.xdt.cn/" title="万通融资" target="_top">万通融资</a></p>
+          <p><a href="http://www.grfyw.com/" title="个人房源网" target="_top">个人房源网</a></p>
+          <p><a href="http://www.zzjjw.cn/" title="九江房价" target="_top">九江房价</a></p>
+          <p><a href="http://bj.jiwu.com/" title="北京买房网" target="_top">北京买房网</a></p>
+          <p><a href="http://bj.lianjia.com/" title="北京房产网" target="_top">北京房产网</a></p>
+          <p><a href="http://nn.loupan.com/" title="南宁楼盘网" target="_top">南宁楼盘网</a></p>
+          <p><a href="http://www.99cfw.com/" title="厂房出租网" target="_top">厂房出租网</a></p>
+        </div>
+        <div id="d3" class="links-main clear">
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://zhuhai.qfang.com/" title="珠海房产网" target="_top">珠海房产网</a></p>
+          <p><a href="http://www.517.cn/" title="沈阳二手房 " target="_top">沈阳二手房 </a></p>
+          <p><a href="http://www.0731fdc.com/" title="长沙房产网" target="_top">长沙房产网</a></p>
+          <p><a href="http://sz.leju.com/" title="深圳新浪乐居" target="_top">深圳新浪乐居</a></p>
+          <p><a href="http://www.tobosu.com/" title="深圳装修网" target="_top">深圳装修网</a></p>
+          <p><a href="http://www.szhk.com/" title="深港在线" target="_top">深港在线</a></p>
+          <p><a href="http://www.596fc.com/" title="漳州房产网" target="_top">漳州房产网</a></p>
+          <p><a href="http://house.qq.com/" title="腾讯房产北京" target="_top">腾讯房产北京</a></p>
+          <p><a href="http://www.jiuzheng.com/" title="装修" target="_top">装修</a></p>
+          <p><a href="http://hetongfa.yjbys.com/" title="装修合同" target="_top">装修合同</a></p>
+          <p><a href="http://www.bzw315.com/" title="装修网	" target="_top">装修网	</a></p>
+          <p><a href="http://www.haogongzhang.com/" title="装修网" target="_top">装修网</a></p>
+          <p><a href="http://www.whjzw.net/" title="武汉装修网" target="_top">武汉装修网</a></p>
+          <p><a href="http://www.juwai.com/" title="海外房产网" target="_top">海外房产网</a></p>
+          <p><a href="http://www.zhuozhoufangchan.com/" title="涿州房产网" target="_top">涿州房产网</a></p>
+          <p><a href="http://www.shenchuang.com/" title="深圳之窗" target="_top">深圳之窗</a></p>
+          <p><a href="http://shenzhen.8684.cn/" title="深圳公交查询" target="_top">深圳公交查询</a></p>
+          <p><a href="http://shenzhen.tianqi.com/" title="深圳天气" target="_top">深圳天气</a></p>
+          <p><a href="http://shenzhen.anjuke.com/" title="深圳房产" target="_top">深圳房产</a></p>
+          <p><a href="http://www.0755rc.com/" title="深圳招聘网" target="_top">深圳招聘网</a></p>
+          <p><a href="http://www.muniao.com/" title="日租公寓" target="_top">日租公寓</a></p>
+          <p><a href="http://www.5khouse.com/" title="昆山房产网" target="_top">昆山房产网</a></p>
+          <p><a href="http://hangzhou.fangtoo.com/" title="杭州房产网" target="_top">杭州房产网</a></p>
+          <p><a href="http://www.0772fang.com/" title="柳州房产网" target="_top">柳州房产网</a></p>
+          <p><a href="http://www.0572home.com/" title="德清房产网" target="_top">德清房产网</a></p>
+          <p><a href="http://baike.qfang.com/shuyu/" title="房产术语" target="_top">房产术语</a></p>
+          <p><a href="http://baike.qfang.com/renwu/" title="房地产人物" target="_top">房地产人物</a></p>
+          <p><a href="http://www.51gaifang.com/" title="房屋设计图" target="_top">房屋设计图</a></p>
+          <p><a href="http://esf.xmhouse.com/" title="厦门二手房" target="_top">厦门二手房</a></p>
+          <p><a href="http://xm.focus.cn/" title="厦门房产" target="_top">厦门房产</a></p>
+          <p><a href="http://yipu.com.cn/" title="商业地产" target="_top">商业地产</a></p>
+          <p><a href="http://www.lsfc.net.cn/" title="嘉州房产网" target="_top">嘉州房产网</a></p>
+          <p><a href="http://www.tuliu.com/" title="土地流转" target="_top">土地流转</a></p>
+          <p><a href="http://www.to8to.com/" title="土巴兔装修网" target="_top">土巴兔装修网</a></p>
+          <p><a href="http://www.yihaojiaju.com/" title="家居装修" target="_top">家居装修</a></p>
+          <p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房" target="_top">深圳二手房</a></p>
+          <p><a href="http://www.jiancai365.cn/" title="365建材网" target="_top">365建材网</a></p>
+          <p><a href="http://www.xdt.cn/" title="万通融资" target="_top">万通融资</a></p>
+          <p><a href="http://www.grfyw.com/" title="个人房源网" target="_top">个人房源网</a></p>
+          <p><a href="http://www.zzjjw.cn/" title="九江房价" target="_top">九江房价</a></p>
+          <p><a href="http://bj.jiwu.com/" title="北京买房网" target="_top">北京买房网</a></p>
+          <p><a href="http://bj.lianjia.com/" title="北京房产网" target="_top">北京房产网</a></p>
+          <p><a href="http://nn.loupan.com/" title="南宁楼盘网" target="_top">南宁楼盘网</a></p>
+          <p><a href="http://www.99cfw.com/" title="厂房出租网" target="_top">厂房出租网</a></p>
+        </div>
+        <div id="d4" class="links-main clear">
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://zhuhai.qfang.com/" title="珠海房产网" target="_top">珠海房产网</a></p>
+          <p><a href="http://www.517.cn/" title="沈阳二手房 " target="_top">沈阳二手房 </a></p>
+          <p><a href="http://www.guojj.com/" title="深圳装修" target="_top">深圳装修</a></p>
+          <p><a href="http://www.596fc.com/" title="漳州房产网" target="_top">漳州房产网</a></p>
+          <p><a href="http://house.qq.com/" title="腾讯房产北京" target="_top">腾讯房产北京</a></p>
+          <p><a href="http://www.jiuzheng.com/" title="装修" target="_top">装修</a></p>
+          <p><a href="http://hetongfa.yjbys.com/" title="装修合同" target="_top">装修合同</a></p>
+          <p><a href="http://www.bzw315.com/" title="装修网	" target="_top">装修网	</a></p>
+          <p><a href="http://www.haogongzhang.com/" title="装修网" target="_top">装修网</a></p>
+          <p><a href="http://www.whjzw.net/" title="武汉装修网" target="_top">武汉装修网</a></p>
+          <p><a href="http://www.juwai.com/" title="海外房产网" target="_top">海外房产网</a></p>
+          <p><a href="http://www.zhuozhoufangchan.com/" title="涿州房产网" target="_top">涿州房产网</a></p>
+          <p><a href="http://www.shenchuang.com/" title="深圳之窗" target="_top">深圳之窗</a></p>
+          <p><a href="http://shenzhen.8684.cn/" title="深圳公交查询" target="_top">深圳公交查询</a></p>
+          <p><a href="http://shenzhen.tianqi.com/" title="深圳天气" target="_top">深圳天气</a></p>
+          <p><a href="http://shenzhen.anjuke.com/" title="深圳房产" target="_top">深圳房产</a></p>
+          <p><a href="http://www.0755rc.com/" title="深圳招聘网" target="_top">深圳招聘网</a></p>
+          <p><a href="http://www.muniao.com/" title="日租公寓" target="_top">日租公寓</a></p>
+          <p><a href="http://www.5khouse.com/" title="昆山房产网" target="_top">昆山房产网</a></p>
+          <p><a href="http://hangzhou.fangtoo.com/" title="杭州房产网" target="_top">杭州房产网</a></p>
+          <p><a href="http://www.0772fang.com/" title="柳州房产网" target="_top">柳州房产网</a></p>
+          <p><a href="http://www.0572home.com/" title="德清房产网" target="_top">德清房产网</a></p>
+          <p><a href="http://baike.qfang.com/shuyu/" title="房产术语" target="_top">房产术语</a></p>
+          <p><a href="http://baike.qfang.com/renwu/" title="房地产人物" target="_top">房地产人物</a></p>
+          <p><a href="http://www.51gaifang.com/" title="房屋设计图" target="_top">房屋设计图</a></p>
+          <p><a href="http://esf.xmhouse.com/" title="厦门二手房" target="_top">厦门二手房</a></p>
+          <p><a href="http://xm.focus.cn/" title="厦门房产" target="_top">厦门房产</a></p>
+          <p><a href="http://yipu.com.cn/" title="商业地产" target="_top">商业地产</a></p>
+          <p><a href="http://www.lsfc.net.cn/" title="嘉州房产网" target="_top">嘉州房产网</a></p>
+          <p><a href="http://www.tuliu.com/" title="土地流转" target="_top">土地流转</a></p>
+          <p><a href="http://www.to8to.com/" title="土巴兔装修网" target="_top">土巴兔装修网</a></p>
+          <p><a href="http://www.yihaojiaju.com/" title="家居装修" target="_top">家居装修</a></p>
+          <p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房" target="_top">深圳二手房</a></p>
+          <p><a href="http://www.jiancai365.cn/" title="365建材网" target="_top">365建材网</a></p>
+          <p><a href="http://www.xdt.cn/" title="万通融资" target="_top">万通融资</a></p>
+          <p><a href="http://www.grfyw.com/" title="个人房源网" target="_top">个人房源网</a></p>
+          <p><a href="http://www.zzjjw.cn/" title="九江房价" target="_top">九江房价</a></p>
+          <p><a href="http://bj.jiwu.com/" title="北京买房网" target="_top">北京买房网</a></p>
+          <p><a href="http://bj.lianjia.com/" title="北京房产网" target="_top">北京房产网</a></p>
+          <p><a href="http://nn.loupan.com/" title="南宁楼盘网" target="_top">南宁楼盘网</a></p>
+          <p><a href="http://www.99cfw.com/" title="厂房出租网" target="_top">厂房出租网</a></p>
+        </div>
+        <div id="d5" class="links-main clear">
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://zhuhai.qfang.com/" title="珠海房产网" target="_top">珠海房产网</a></p>
+          <p><a href="http://www.517.cn/" title="沈阳二手房 " target="_top">沈阳二手房 </a></p>
+          <p><a href="http://www.guojj.com/" title="深圳装修" target="_top">深圳装修</a></p>
+          <p><a href="http://www.whjzw.net/" title="装修效果图" target="_top">装修效果图</a></p>
+          <p><a href="http://houseshangdu.com/" title="郑州房产网" target="_top">郑州房产网</a></p>
+          <p><a href="http://www.0731fdc.com/" title="长沙房产网" target="_top">长沙房产网</a></p>
+          <p><a href="http://sz.leju.com/" title="深圳新浪乐居" target="_top">深圳新浪乐居</a></p>
+          <p><a href="http://www.tobosu.com/" title="深圳装修网" target="_top">深圳装修网</a></p>
+          <p><a href="http://www.szhk.com/" title="深港在线" target="_top">深港在线</a></p>
+          <p><a href="http://www.596fc.com/" title="漳州房产网" target="_top">漳州房产网</a></p>
+          <p><a href="http://house.qq.com/" title="腾讯房产北京" target="_top">腾讯房产北京</a></p>
+          <p><a href="http://www.jiuzheng.com/" title="装修" target="_top">装修</a></p>
+          <p><a href="http://hetongfa.yjbys.com/" title="装修合同" target="_top">装修合同</a></p>
+          <p><a href="http://www.bzw315.com/" title="装修网	" target="_top">装修网	</a></p>
+          <p><a href="http://www.haogongzhang.com/" title="装修网" target="_top">装修网</a></p>
+          <p><a href="http://www.whjzw.net/" title="武汉装修网" target="_top">武汉装修网</a></p>
+          <p><a href="http://www.juwai.com/" title="海外房产网" target="_top">海外房产网</a></p>
+          <p><a href="http://www.zhuozhoufangchan.com/" title="涿州房产网" target="_top">涿州房产网</a></p>
+          <p><a href="http://www.shenchuang.com/" title="深圳之窗" target="_top">深圳之窗</a></p>
+          <p><a href="http://shenzhen.8684.cn/" title="深圳公交查询" target="_top">深圳公交查询</a></p>
+          <p><a href="http://shenzhen.tianqi.com/" title="深圳天气" target="_top">深圳天气</a></p>
+          <p><a href="http://shenzhen.anjuke.com/" title="深圳房产" target="_top">深圳房产</a></p>
+          <p><a href="http://www.0755rc.com/" title="深圳招聘网" target="_top">深圳招聘网</a></p>
+          <p><a href="http://www.muniao.com/" title="日租公寓" target="_top">日租公寓</a></p>
+          <p><a href="http://www.5khouse.com/" title="昆山房产网" target="_top">昆山房产网</a></p>
+          <p><a href="http://hangzhou.fangtoo.com/" title="杭州房产网" target="_top">杭州房产网</a></p>
+          <p><a href="http://www.0772fang.com/" title="柳州房产网" target="_top">柳州房产网</a></p>
+          <p><a href="http://www.0572home.com/" title="德清房产网" target="_top">德清房产网</a></p>
+          <p><a href="http://baike.qfang.com/shuyu/" title="房产术语" target="_top">房产术语</a></p>
+          <p><a href="http://baike.qfang.com/renwu/" title="房地产人物" target="_top">房地产人物</a></p>
+          <p><a href="http://www.51gaifang.com/" title="房屋设计图" target="_top">房屋设计图</a></p>
+          <p><a href="http://esf.xmhouse.com/" title="厦门二手房" target="_top">厦门二手房</a></p>
+          <p><a href="http://xm.focus.cn/" title="厦门房产" target="_top">厦门房产</a></p>
+          <p><a href="http://yipu.com.cn/" title="商业地产" target="_top">商业地产</a></p>
+          <p><a href="http://www.lsfc.net.cn/" title="嘉州房产网" target="_top">嘉州房产网</a></p>
+          <p><a href="http://www.tuliu.com/" title="土地流转" target="_top">土地流转</a></p>
+          <p><a href="http://www.to8to.com/" title="土巴兔装修网" target="_top">土巴兔装修网</a></p>
+          <p><a href="http://www.yihaojiaju.com/" title="家居装修" target="_top">家居装修</a></p>
+          <p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房" target="_top">深圳二手房</a></p>
+          <p><a href="http://www.jiancai365.cn/" title="365建材网" target="_top">365建材网</a></p>
+          <p><a href="http://www.xdt.cn/" title="万通融资" target="_top">万通融资</a></p>
+          <p><a href="http://www.grfyw.com/" title="个人房源网" target="_top">个人房源网</a></p>
+          <p><a href="http://www.zzjjw.cn/" title="九江房价" target="_top">九江房价</a></p>
+          <p><a href="http://bj.jiwu.com/" title="北京买房网" target="_top">北京买房网</a></p>
+          <p><a href="http://bj.lianjia.com/" title="北京房产网" target="_top">北京房产网</a></p>
+          <p><a href="http://nn.loupan.com/" title="南宁楼盘网" target="_top">南宁楼盘网</a></p>
+          <p><a href="http://www.99cfw.com/" title="厂房出租网" target="_top">厂房出租网</a></p>
+        </div>
+        <div id="d6" class="links-main clear">
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://nj.lianjia.com/" title="南京房产网" target="_top">南京房产网</a></p>
+          <p><a href="http://zhuhai.qfang.com/" title="珠海房产网" target="_top">珠海房产网</a></p>
+          <p><a href="http://www.517.cn/" title="沈阳二手房 " target="_top">沈阳二手房 </a></p>
+          <p><a href="http://www.guojj.com/" title="深圳装修" target="_top">深圳装修</a></p>
+          <p><a href="http://www.whjzw.net/" title="装修效果图" target="_top">装修效果图</a></p>
+          <p><a href="http://houseshangdu.com/" title="郑州房产网" target="_top">郑州房产网</a></p>
+          <p><a href="http://www.0731fdc.com/" title="长沙房产网" target="_top">长沙房产网</a></p>
+          <p><a href="http://sz.leju.com/" title="深圳新浪乐居" target="_top">深圳新浪乐居</a></p>
+          <p><a href="http://www.shenchuang.com/" title="深圳之窗" target="_top">深圳之窗</a></p>
+          <p><a href="http://shenzhen.8684.cn/" title="深圳公交查询" target="_top">深圳公交查询</a></p>
+          <p><a href="http://shenzhen.tianqi.com/" title="深圳天气" target="_top">深圳天气</a></p>
+          <p><a href="http://shenzhen.anjuke.com/" title="深圳房产" target="_top">深圳房产</a></p>
+          <p><a href="http://www.0755rc.com/" title="深圳招聘网" target="_top">深圳招聘网</a></p>
+          <p><a href="http://www.muniao.com/" title="日租公寓" target="_top">日租公寓</a></p>
+          <p><a href="http://www.5khouse.com/" title="昆山房产网" target="_top">昆山房产网</a></p>
+          <p><a href="http://hangzhou.fangtoo.com/" title="杭州房产网" target="_top">杭州房产网</a></p>
+          <p><a href="http://www.0772fang.com/" title="柳州房产网" target="_top">柳州房产网</a></p>
+          <p><a href="http://www.0572home.com/" title="德清房产网" target="_top">德清房产网</a></p>
+          <p><a href="http://baike.qfang.com/shuyu/" title="房产术语" target="_top">房产术语</a></p>
+          <p><a href="http://baike.qfang.com/renwu/" title="房地产人物" target="_top">房地产人物</a></p>
+          <p><a href="http://www.51gaifang.com/" title="房屋设计图" target="_top">房屋设计图</a></p>
+          <p><a href="http://esf.xmhouse.com/" title="厦门二手房" target="_top">厦门二手房</a></p>
+          <p><a href="http://xm.focus.cn/" title="厦门房产" target="_top">厦门房产</a></p>
+          <p><a href="http://yipu.com.cn/" title="商业地产" target="_top">商业地产</a></p>
+          <p><a href="http://www.lsfc.net.cn/" title="嘉州房产网" target="_top">嘉州房产网</a></p>
+          <p><a href="http://www.tuliu.com/" title="土地流转" target="_top">土地流转</a></p>
+          <p><a href="http://www.to8to.com/" title="土巴兔装修网" target="_top">土巴兔装修网</a></p>
+          <p><a href="http://www.yihaojiaju.com/" title="家居装修" target="_top">家居装修</a></p>
+          <p><a href="http://shenzhen.qfang.com/sale" title="深圳二手房" target="_top">深圳二手房</a></p>
+          <p><a href="http://www.jiancai365.cn/" title="365建材网" target="_top">365建材网</a></p>
+          <p><a href="http://www.xdt.cn/" title="万通融资" target="_top">万通融资</a></p>
+          <p><a href="http://www.grfyw.com/" title="个人房源网" target="_top">个人房源网</a></p>
+          <p><a href="http://www.zzjjw.cn/" title="九江房价" target="_top">九江房价</a></p>
+          <p><a href="http://bj.jiwu.com/" title="北京买房网" target="_top">北京买房网</a></p>
+          <p><a href="http://bj.lianjia.com/" title="北京房产网" target="_top">北京房产网</a></p>
+          <p><a href="http://nn.loupan.com/" title="南宁楼盘网" target="_top">南宁楼盘网</a></p>
+          <p><a href="http://www.99cfw.com/" title="厂房出租网" target="_top">厂房出租网</a></p>
+        </div>
+      </div>
+      <div class="letter">
+        <p>
+          按字母检索:
+          <a target="_top" href="http://shenzhen.qfang.com/letter/A"><span>A</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/B"><span>B</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/C"><span>C</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/D"><span>D</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/E"><span>E</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/F"><span>F</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/G"><span>G</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/H"><span>H</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/I"><span>I</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/J"><span>J</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/K"><span>K</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/L"><span>L</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/M"><span>M</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/N"><span>N</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/O"><span>O</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/P"><span>P</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/Q"><span>Q</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/R"><span>R</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/S"><span>S</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/T"><span>T</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/U"><span>U</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/V"><span>V</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/W"><span>W</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/X"><span>X</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/Y"><span>Y</span></a>
+          <a target="_top" href="http://shenzhen.qfang.com/letter/Z"><span>Z</span></a>
+        </p>
+        <div>Copyright © 2017 www.qfang.com. All Rights Reserved ICP备案号：<a href="#"> 粤ICP备05067219号-3</a></div>
+        <div>公司名称：深圳市云房网络科技有限公司 <a href="#"><img src="img/govicon.gif" alt="govicon.gif"/></a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--返回顶部和手机二维码-->
+<div id="fixed-top">
+  <i><b>下载Q房app <span></span></b></i>
+  <i><b>返回顶部 <span></span></b></i>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/nav-hover.js"></script>
+<script src="js/location.js"></script>
+<script src="js/detalisToggle.js"></script>
+<script src="js/detalis.js"></script>
+<script src="js/documentCookie.js"></script>
+</body>
+</html>
